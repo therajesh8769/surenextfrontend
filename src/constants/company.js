@@ -1,86 +1,143 @@
 export const COMPANY = {
-  name: 'Surenext',
-  tagline: 'Sure + Next — Reliable Next-Generation Technology Solutions',
-  description: 'We help businesses grow through custom software, AI, cloud, and digital transformation solutions.',
-  email: 'hello@surenext.com',
-  phone: '+1 (555) 123-4567',
-  address: '123 Innovation Drive, Suite 400, San Francisco, CA 94105',
+  name: "Surenext",
+  tagline: "Custom Software & AI Engineering",
+  description:
+    "We design and build custom software, AI solutions, and cloud infrastructure that help businesses solve real problems and grow with confidence.",
+  email: "hello@surenext.com",
+  phone: "+91 XXXXX XXXXX",
+  address: "India",
   social: {
-    twitter: 'https://twitter.com/surenext',
-    linkedin: 'https://linkedin.com/company/surenext',
-    github: 'https://github.com/surenext',
-    instagram: 'https://instagram.com/surenext',
+    twitter: "https://twitter.com/surenext",
+    linkedin: "https://linkedin.com/company/surenext",
+    github: "https://github.com/surenext",
+    instagram: "https://instagram.com/surenext",
   },
 };
 
 export const STATS = [
-  { value: '200+', label: 'Projects Delivered' },
-  { value: '50+', label: 'Happy Clients' },
-  { value: '35+', label: 'Team Members' },
-  { value: '5+', label: 'Years Experience' },
+  {
+    value: "10+",
+    label: "Projects Delivered",
+  },
+  {
+    value: "5+",
+    label: "Technologies We Specialize In",
+  },
+  {
+    value: "End-to-End",
+    label: "Design to Deployment",
+  },
+  {
+    value: "AI Ready",
+    label: "Modern Software Solutions",
+  },
 ];
 
 export const VALUES = [
-  { title: 'Innovation', description: 'We embrace cutting-edge technologies to deliver future-proof solutions.' },
-  { title: 'Reliability', description: 'Every project is delivered on time, on budget, with exceptional quality.' },
-  { title: 'Transparency', description: 'Open communication and honest partnerships from day one.' },
-  { title: 'Excellence', description: 'We hold ourselves to the highest standards in everything we build.' },
+  {
+    title: "Thoughtful Engineering",
+    description:
+      "We build clean, maintainable software that's designed to evolve with your business."
+  },
+  {
+    title: "Clear Communication",
+    description:
+      "You'll always know what's being built, what's next, and why every decision matters."
+  },
+  {
+    title: "Quality First",
+    description:
+      "We focus on delivering reliable, well-tested software instead of rushing features."
+  },
+  {
+    title: "Long-Term Partnership",
+    description:
+      "We continue supporting your product after launch with improvements, maintenance, and technical guidance."
+  },
 ];
 
 export const PROCESS_STEPS = [
-  { step: '01', title: 'Discovery', description: 'We analyze your requirements, goals, and challenges to define the perfect roadmap.' },
-  { step: '02', title: 'Design', description: 'Our designers craft intuitive interfaces and system architectures tailored to your needs.' },
-  { step: '03', title: 'Develop', description: 'Our engineers build robust, scalable solutions using modern technologies and best practices.' },
-  { step: '04', title: 'Deploy', description: 'We launch, monitor, and continuously optimize your solution for peak performance.' },
+  {
+    step: "01",
+    title: "Discover",
+    description:
+      "We start by understanding your business, goals, users, and technical requirements."
+  },
+  {
+    step: "02",
+    title: "Plan",
+    description:
+      "We define the architecture, user experience, timeline, and delivery roadmap before development begins."
+  },
+  {
+    step: "03",
+    title: "Build",
+    description:
+      "Using modern technologies and an iterative workflow, we turn ideas into reliable software."
+  },
+  {
+    step: "04",
+    title: "Launch & Support",
+    description:
+      "After deployment, we help monitor, maintain, and improve your product as your business grows."
+  },
 ];
 
-export const TESTIMONIALS = [
+
+
+export const FEATURED_PROJECTS = [
   {
-    name: 'Sarah Chen',
-    role: 'CTO',
-    company: 'TechFlow Inc.',
-    quote: 'Surenext transformed our legacy systems into a modern, scalable platform. Their team\'s expertise in cloud architecture and AI integration was exceptional.',
-    avatar: null,
+    title: "Learning Management Platform",
+    category: "Education",
+    description:
+      "A full-featured learning platform with authentication, payments, course management, and student dashboards.",
+    technologies: ["Next.js", "Node.js", "MongoDB", "Razorpay"],
   },
   {
-    name: 'Michael Rodriguez',
-    role: 'Founder',
-    company: 'StartupGrid',
-    quote: 'Working with Surenext felt like having an in-house team. They delivered our MVP in record time, and the quality exceeded our expectations.',
-    avatar: null,
+    title: "Financial Analytics Dashboard",
+    category: "Analytics",
+    description:
+      "Interactive dashboards and reporting tools that help teams monitor business performance and make informed decisions.",
+    technologies: ["React", "Node.js", "BigQuery"],
   },
   {
-    name: 'Emily Watson',
-    role: 'VP of Engineering',
-    company: 'DataPulse',
-    quote: 'The attention to detail and commitment to best practices sets Surenext apart. Our platform handles 10x more traffic after their optimization work.',
-    avatar: null,
+    title: "AI Interview Assistant",
+    category: "Artificial Intelligence",
+    description:
+      "An AI-powered platform that helps users prepare for interviews with automated feedback and intelligent question generation.",
+    technologies: ["Next.js", "OpenAI", "Python"],
   },
 ];
 
 export const FAQ_ITEMS = [
   {
-    question: 'What industries do you serve?',
-    answer: 'We serve startups, enterprises, healthcare, education, ecommerce, manufacturing, logistics, and more. Our solutions are tailored to each industry\'s unique requirements.',
+    question: "What kinds of businesses do you work with?",
+    answer:
+      "We work with startups, educational organizations, growing businesses, and teams looking to build custom software, automate workflows, or modernize existing systems.",
   },
   {
-    question: 'How long does a typical project take?',
-    answer: 'Project timelines vary based on scope. A typical website takes 4-8 weeks, web applications 8-16 weeks, and enterprise solutions 3-6 months. We provide detailed timelines during discovery.',
+    question: "How long does a typical project take?",
+    answer:
+      "Timelines depend on the project's scope and complexity. Small websites typically take 3–6 weeks, while custom platforms and web applications generally take 2–4 months. We'll provide a clear timeline before development begins.",
   },
   {
-    question: 'Do you provide post-launch support?',
-    answer: 'Yes, we offer comprehensive maintenance and support packages including 24/7 monitoring, regular updates, bug fixes, and performance optimization.',
+    question: "Do you provide support after launch?",
+    answer:
+      "Yes. We offer ongoing maintenance, bug fixes, feature enhancements, performance improvements, and technical support to help your product continue evolving.",
   },
   {
-    question: 'What is your development process?',
-    answer: 'We follow an agile methodology with 2-week sprints, daily standups, and regular client demos. This ensures transparency, flexibility, and continuous delivery.',
+    question: "How do you manage projects?",
+    answer:
+      "We work in small milestones with regular updates, review meetings, and continuous communication, so you always know the project's progress.",
   },
   {
-    question: 'Can you work with our existing team?',
-    answer: 'Absolutely. We offer team augmentation services and can seamlessly integrate with your existing development workflows, tools, and processes.',
+    question: "Can you work with our existing team?",
+    answer:
+      "Absolutely. Whether you need additional engineering support or want us to collaborate with your in-house team, we can integrate seamlessly into your workflow.",
   },
   {
-    question: 'What technologies do you specialize in?',
-    answer: 'We specialize in React, Next.js, Node.js, Python, AI/ML, AWS, Docker, and modern cloud-native technologies. We choose the best stack for each project\'s needs.',
+    question: "What technologies do you work with?",
+    answer:
+      "Our core stack includes React, Next.js, Node.js, TypeScript, Python, AI integrations, cloud platforms, modern databases, and scalable backend architectures. We always choose the technologies that best fit your project rather than following trends.",
   },
 ];

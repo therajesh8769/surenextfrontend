@@ -12,7 +12,7 @@ import Button from '@/components/ui/Button';
 import Accordion from '@/components/ui/Accordion';
 import CodePanel from '@/components/ui/CodePanel';
 import { SERVICES } from '@/constants/services';
-import { STATS, TESTIMONIALS, FAQ_ITEMS, PROCESS_STEPS } from '@/constants/company';
+import { STATS, FAQ_ITEMS, PROCESS_STEPS } from '@/constants/company';
 import { INDUSTRIES } from '@/constants/industries';
 import { TECHNOLOGIES } from '@/constants/industries';
 import { useCounter } from '@/hooks/useAnimations';
@@ -102,7 +102,7 @@ export default function Home() {
       </section>
 
       {/* ===== STATS ===== */}
-      <section className="section section--alt">
+      {/* <section className="section section--alt">
         <div className="container">
           <div className="stats-grid">
             {STATS.map((stat) => (
@@ -110,7 +110,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== FEATURED SERVICES ===== */}
       <section className="section">
@@ -123,7 +123,7 @@ export default function Home() {
             />
           </AnimatedSection>
           <AnimatedSection stagger animation="fadeUp">
-            <div className="grid grid--3">
+            <div className="grid grid--3 scroll-mobile">
               {featuredServices.map((service) => (
                 <AnimatedItem key={service.slug}>
                   <Link to={`/services/${service.slug}`} className="service-card-link">
@@ -240,7 +240,7 @@ export default function Home() {
             />
           </AnimatedSection>
           <AnimatedSection>
-            <div className="tech-grid">
+            <div className="tech-grid scroll-mobile">
               {Object.entries(TECHNOLOGIES).map(([category, techs]) => (
                 <div key={category} className="tech-category">
                   <h4 className="tech-category__title">{category}</h4>
@@ -257,7 +257,7 @@ export default function Home() {
       </section>
 
       {/* ===== TESTIMONIALS ===== */}
-      <section className="section section--alt">
+      {/* <section className="section section--alt">
         <div className="container">
           <AnimatedSection>
             <SectionHeading
@@ -288,7 +288,7 @@ export default function Home() {
             </div>
           </AnimatedSection>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== FAQ ===== */}
       <section className="section">

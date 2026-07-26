@@ -1,61 +1,85 @@
 {
   "meta": {
-    "title": "Surenext — Next-Gen Technology Solutions | Custom Software, AI & Cloud",
-    "description": "Surenext delivers reliable next-generation technology solutions. Custom software development, AI, cloud solutions, and digital transformation for businesses worldwide."
+    "title": "Surenext | Custom Software, AI & Cloud Engineering",
+    "description": "Surenext designs and builds custom software, AI solutions, cloud infrastructure, and digital products for startups, growing businesses, and enterprises."
   },
   "hero": {
-    "eyebrow": "Software & AI product studio",
-    "title_start": "We build the software behind",
-    "title_accent": "next‑stage",
-    "title_end": "companies.",
-    "subtitle": "Surenext is a small studio of senior engineers and designers who ship custom software, AI products, and cloud infrastructure — for founders who need it done right the first time.",
+    "eyebrow": "Custom Software & AI Studio",
+    "title_start": "Engineering software that helps",
+    "title_accent": "businesses",
+    "title_end": "move forward.",
+    "subtitle": "We partner with startups and growing businesses to design, build, and scale reliable software. From AI-powered applications to cloud infrastructure, we create technology that's built for today and ready for tomorrow.",
     "actions": {
       "primary": "Start Your Project",
-      "secondary": "See Our Work"
+      "secondary": "View Our Work"
     }
   },
   "services": {
-    "overline": "What We Do",
-    "title": "Services that drive growth",
-    "description": "From custom software to AI solutions, we deliver end-to-end technology services.",
-    "link_text": "Learn more",
-    "cta": "View All Services"
+    "overline": "Our Services",
+    "title": "Technology built around your business",
+    "description": "Whether you're launching a new product, modernizing existing systems, or automating business processes, we build solutions tailored to your goals.",
+    "link_text": "Explore Service",
+    "cta": "Explore All Services"
   },
   "why_us": {
     "overline": "Why Surenext",
-    "title": "Why companies choose us",
-    "description": "We combine technical excellence with a client-first approach to deliver results.",
+    "title": "A development partner you can rely on",
+    "description": "We believe successful software comes from thoughtful engineering, clear communication, and long-term collaboration. Every project is built with quality, scalability, and maintainability in mind.",
     "features": [
-      { "title": "Fast Delivery", "desc": "Agile methodology with 2-week sprints. Your project moves forward every day." },
-      { "title": "Enterprise Security", "desc": "SOC 2 compliant processes. Your data and IP are always protected." },
-      { "title": "Dedicated Teams", "desc": "Senior engineers assigned to your project. No juniors, no outsourcing." },
-      { "title": "24/7 Support", "desc": "Round-the-clock monitoring and support. We're always here for you." }
+      {
+        "title": "Clear Communication",
+        "desc": "Regular updates, transparent timelines, and direct collaboration throughout the entire project."
+      },
+      {
+        "title": "Built to Scale",
+        "desc": "Modern architectures and clean code that grow with your business and adapt to future needs."
+      },
+      {
+        "title": "Dedicated Engineers",
+        "desc": "Work directly with the engineers designing and building your product from start to finish."
+      },
+      {
+        "title": "Long-Term Support",
+        "desc": "We stay with you after launch to improve, maintain, and evolve your software as your business grows."
+      }
     ]
   },
   "process": {
-    "overline": "Our Process",
-    "title": "From idea to launch in 4 steps",
-    "description": "A proven methodology that ensures quality, transparency, and on-time delivery."
+    "overline": "How We Work",
+    "title": "A simple process focused on results",
+    "description": "Every project begins with understanding your goals. We then design, build, test, and launch software through an iterative process that keeps you involved at every stage."
   },
   "industries": {
-    "overline": "Industries",
-    "title": "Solutions for every industry",
-    "description": "We understand the unique challenges of each sector and deliver tailored solutions.",
-    "cta": "View All Industries"
+    "overline": "Who We Work With",
+    "title": "Technology for businesses at every stage",
+    "description": "From early-stage startups to established organizations, we build software that solves real business challenges across multiple industries.",
+    "cta": "Explore Industries"
   },
   "tech_stack": {
     "overline": "Technology Stack",
-    "title": "Built with the best technologies",
-    "description": "We use cutting-edge tools and frameworks to build scalable, future-proof solutions."
+    "title": "Modern technologies. Practical choices.",
+    "description": "We choose technologies based on your project's needs, focusing on performance, security, scalability, and long-term maintainability."
+  },
+  "portfolio": {
+    "overline": "Selected Work",
+    "title": "Projects we're proud to build",
+    "description": "A selection of software, AI solutions, and digital products we've designed and developed for ambitious businesses.",
+    "cta": "View All Projects"
   },
   "testimonials": {
-    "overline": "Testimonials",
-    "title": "What our clients say",
-    "description": "Don't just take our word for it — hear from the companies we've helped."
+    "overline": "Client Stories",
+    "title": "Built on lasting partnerships",
+    "description": "We value long-term relationships and believe the best results come from working closely with our clients."
   },
   "faq": {
-    "overline": "FAQ",
-    "title": "Frequently asked questions",
-    "description": "Everything you need to know about working with us."
+    "overline": "Frequently Asked Questions",
+    "title": "Answers before we get started",
+    "description": "Everything you need to know about our process, timelines, communication, and how we work together."
+  },
+  "contact_cta": {
+    "title": "Let's build something meaningful.",
+    "description": "Whether you're starting from an idea or improving an existing product, we'd love to learn about your project and explore how we can help.",
+    "primary": "Schedule a Discovery Call",
+    "secondary": "Get in Touch"
   }
 }
