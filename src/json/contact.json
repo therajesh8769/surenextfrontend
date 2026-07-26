@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Contact Us — Surenext | Start Your Project",
+    "description": "Get in touch with Surenext. Let's discuss your project requirements and build something amazing together."
+  },
+  "hero": {
+    "overline": "Contact Us",
+    "title_start": "Let's build something",
+    "title_accent": "great together",
+    "desc": "Tell us about your project and we'll get back to you within 24 hours."
+  },
+  "form": {
+    "title": "Send us a message",
+    "alerts": {
+      "success": "Thank you! We'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again."
+    },
+    "labels": {
+      "name": "Full Name *",
+      "email": "Email *",
+      "company": "Company",
+      "subject": "Subject *",
+      "message": "Message *"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Your company",
+      "subject": "Project inquiry",
+      "message": "Tell us about your project..."
+    },
+    "submit": "Send Message",
+    "submitting": "Sending..."
+  },
+  "validation": {
+    "name_min": "Name must be at least 2 characters",
+    "email_invalid": "Please enter a valid email",
+    "subject_min": "Subject must be at least 5 characters",
+    "message_min": "Message must be at least 20 characters"
+  },
+  "info": {
+    "title": "Get in touch",
+    "desc": "Prefer to reach out directly? Here's how you can contact us.",
+    "labels": {
+      "email": "Email",
+      "phone": "Phone",
+      "office": "Office"
+    },
+    "follow_us": "Follow us",
+    "map": "Google Maps"
+  }
+}

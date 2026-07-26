@@ -3,6 +3,7 @@ import { useState } from 'react';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { TECHNOLOGIES } from '@/constants/industries';
+import content from '@/json/technologies.json';
 import './Technologies.css';
 
 export default function Technologies() {
@@ -12,9 +13,9 @@ export default function Technologies() {
     <>
       <Helmet><title>Technologies — Surenext</title></Helmet>
       <section className="tech-hero"><div className="container"><AnimatedSection>
-        <span className="tech-hero__overline">Technologies</span>
-        <h1 className="tech-hero__title">Built with <span className="text-accent">the best tools</span></h1>
-        <p className="tech-hero__desc">We use cutting-edge technologies to deliver performant, scalable solutions.</p>
+        <span className="tech-hero__overline">{content.hero.overline}</span>
+        <h1 className="tech-hero__title">{content.hero.title_start} <span className="text-accent">{content.hero.title_accent}</span></h1>
+        <p className="tech-hero__desc">{content.hero.desc}</p>
       </AnimatedSection></div></section>
       <section className="section"><div className="container">
         <div className="tech-tabs">

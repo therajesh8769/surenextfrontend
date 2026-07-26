@@ -9,15 +9,16 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import Button from '@/components/ui/Button';
 import { OPENINGS, INTERNSHIPS } from '@/constants/careers';
 import { apiPost } from '@/lib/api';
+import content from '@/json/apply.json';
 import './Apply.css';
 
 const schema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email'),
+  name: z.string().min(2, content.validation.name_min),
+  email: z.string().email(content.validation.email_invalid),
   phone: z.string().optional(),
-  role: z.string().min(1, 'Please select a role'),
-  resumeUrl: z.string().url('Please enter a valid link (Drive, Dropbox, LinkedIn, portfolio, etc.)'),
-  message: z.string().min(20, 'Please write at least 20 characters'),
+  role: z.string().min(1, content.validation.role_req),
+  resumeUrl: z.string().url(content.validation.resumeUrl_invalid),
+  message: z.string().min(20, content.validation.message_min),
 });
 
 export default function Apply() {
@@ -44,17 +45,17 @@ export default function Apply() {
   return (
     <>
       <Helmet>
-        <title>Apply — Surenext Careers</title>
-        <meta name="description" content="Apply for a job or internship at Surenext." />
+        <title>{content.meta.title}</title>
+        <meta name="description" content={content.meta.description} />
       </Helmet>
 
       <section className="apply-hero">
         <div className="container container--narrow">
-          <Link to="/careers" className="apply-hero__back"><ArrowLeft size={16} /> All Openings</Link>
+          <Link to="/careers" className="apply-hero__back"><ArrowLeft size={16} /> {content.hero.back_link}</Link>
           <AnimatedSection>
-            <span className="apply-hero__overline">Apply</span>
-            <h1 className="apply-hero__title">Apply for a <span className="text-accent">job or internship</span></h1>
-            <p className="apply-hero__desc">Tell us about yourself and where you'd like to contribute. We review every application and get back to you within a week.</p>
+            <span className="apply-hero__overline">{content.hero.overline}</span>
+            <h1 className="apply-hero__title">{content.hero.title_start} <span className="text-accent">{content.hero.title_accent}</span></h1>
+            <p className="apply-hero__desc">{content.hero.desc}</p>
           </AnimatedSection>
         </div>
       </section>
@@ -66,65 +67,65 @@ export default function Apply() {
               {status === 'success' && (
                 <div className="apply-alert apply-alert--success">
                   <CheckCircle2 size={18} />
-                  <span>Application received! We'll review it and get back to you within a week.</span>
+                  <span>{content.alerts.success}</span>
                 </div>
               )}
               {status === 'error' && (
                 <div className="apply-alert apply-alert--error">
                   <AlertCircle size={18} />
-                  <span>Something went wrong. Please try again.</span>
+                  <span>{content.alerts.error}</span>
                 </div>
               )}
 
               <form onSubmit={handleSubmit(onSubmit)} className="apply-form" noValidate>
                 <div className="apply-form__row">
                   <div className="form-group">
-                    <label htmlFor="name" className="form-label">Full Name *</label>
-                    <input id="name" type="text" className={`form-input ${errors.name ? 'form-input--error' : ''}`} placeholder="Jane Doe" {...register('name')} />
+                    <label htmlFor="name" className="form-label">{content.form.labels.name}</label>
+                    <input id="name" type="text" className={`form-input ${errors.name ? 'form-input--error' : ''}`} placeholder={content.form.placeholders.name} {...register('name')} />
                     {errors.name && <span className="form-error">{errors.name.message}</span>}
                   </div>
                   <div className="form-group">
-                    <label htmlFor="email" className="form-label">Email *</label>
-                    <input id="email" type="email" className={`form-input ${errors.email ? 'form-input--error' : ''}`} placeholder="jane@email.com" {...register('email')} />
+                    <label htmlFor="email" className="form-label">{content.form.labels.email}</label>
+                    <input id="email" type="email" className={`form-input ${errors.email ? 'form-input--error' : ''}`} placeholder={content.form.placeholders.email} {...register('email')} />
                     {errors.email && <span className="form-error">{errors.email.message}</span>}
                   </div>
                 </div>
 
                 <div className="apply-form__row">
                   <div className="form-group">
-                    <label htmlFor="phone" className="form-label">Phone</label>
-                    <input id="phone" type="tel" className="form-input" placeholder="+1 (555) 123-4567" {...register('phone')} />
+                    <label htmlFor="phone" className="form-label">{content.form.labels.phone}</label>
+                    <input id="phone" type="tel" className="form-input" placeholder={content.form.placeholders.phone} {...register('phone')} />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="role" className="form-label">Role you're applying for *</label>
+                    <label htmlFor="role" className="form-label">{content.form.labels.role}</label>
                     <select id="role" className={`form-input ${errors.role ? 'form-input--error' : ''}`} {...register('role')}>
-                      <option value="">Select a role</option>
-                      <optgroup label="Jobs">
+                      <option value="">{content.form.placeholders.role_default}</option>
+                      <optgroup label={content.form.options.optgroup_jobs}>
                         {OPENINGS.map((o) => <option key={o.title} value={o.title}>{o.title}</option>)}
                       </optgroup>
-                      <optgroup label="Internships">
+                      <optgroup label={content.form.options.optgroup_internships}>
                         {INTERNSHIPS.map((o) => <option key={o.title} value={o.title}>{o.title}</option>)}
                       </optgroup>
-                      <option value="General Application">General Application</option>
+                      <option value={content.form.options.general_app}>{content.form.options.general_app}</option>
                     </select>
                     {errors.role && <span className="form-error">{errors.role.message}</span>}
                   </div>
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="resumeUrl" className="form-label">Resume / Portfolio Link *</label>
-                  <input id="resumeUrl" type="text" className={`form-input ${errors.resumeUrl ? 'form-input--error' : ''}`} placeholder="Link to your resume (Drive, Dropbox, LinkedIn, portfolio...)" {...register('resumeUrl')} />
+                  <label htmlFor="resumeUrl" className="form-label">{content.form.labels.resumeUrl}</label>
+                  <input id="resumeUrl" type="text" className={`form-input ${errors.resumeUrl ? 'form-input--error' : ''}`} placeholder={content.form.placeholders.resumeUrl} {...register('resumeUrl')} />
                   {errors.resumeUrl && <span className="form-error">{errors.resumeUrl.message}</span>}
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="message" className="form-label">Why are you a good fit? *</label>
-                  <textarea id="message" rows={5} className={`form-input form-textarea ${errors.message ? 'form-input--error' : ''}`} placeholder="Tell us about your experience and why you're interested..." {...register('message')} />
+                  <label htmlFor="message" className="form-label">{content.form.labels.message}</label>
+                  <textarea id="message" rows={5} className={`form-input form-textarea ${errors.message ? 'form-input--error' : ''}`} placeholder={content.form.placeholders.message} {...register('message')} />
                   {errors.message && <span className="form-error">{errors.message.message}</span>}
                 </div>
 
                 <Button type="submit" size="lg" loading={isSubmitting} icon={Send}>
-                  {isSubmitting ? 'Submitting...' : 'Submit Application'}
+                  {isSubmitting ? content.form.submitting : content.form.submit}
                 </Button>
               </form>
             </div>

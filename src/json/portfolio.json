@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Portfolio — Surenext | Our Work"
+  },
+  "hero": {
+    "overline": "Portfolio",
+    "title_start": "Selected",
+    "title_accent": "work",
+    "desc": "A selection of projects that showcase our expertise across industries — from early-stage MVPs to enterprise-scale platforms."
+  },
+  "projects": [
+    { "title": "TechFlow Platform", "category": "SaaS", "desc": "Enterprise SaaS platform serving 10,000+ users with real-time collaboration.", "pattern": "diagonal" },
+    { "title": "MediCare App", "category": "Healthcare", "desc": "HIPAA-compliant telemedicine platform connecting patients with healthcare providers.", "pattern": "dots" },
+    { "title": "ShopNest", "category": "Ecommerce", "desc": "Multi-vendor marketplace processing $2M+ monthly transactions.", "pattern": "arcs" },
+    { "title": "LogiTrack", "category": "Logistics", "desc": "Real-time fleet management and route optimization for 500+ vehicles.", "pattern": "grid" },
+    { "title": "EduLearn LMS", "category": "Education", "desc": "Learning management system used by 50+ institutions worldwide.", "pattern": "dots" },
+    { "title": "FinanceAI", "category": "Finance", "desc": "AI-powered financial analytics dashboard for investment firms.", "pattern": "diagonal" }
+  ],
+  "cta": {
+    "text": "Have a project in mind? We'd love to hear about it.",
+    "btn": "Start a Conversation"
+  }
+}

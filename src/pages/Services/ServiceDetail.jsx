@@ -6,6 +6,7 @@ import SectionHeading from '@/components/ui/SectionHeading';
 import Button from '@/components/ui/Button';
 import Accordion from '@/components/ui/Accordion';
 import { SERVICES } from '@/constants/services';
+import content from '@/json/service-detail.json';
 import './ServiceDetail.css';
 
 export default function ServiceDetail() {
@@ -15,17 +16,26 @@ export default function ServiceDetail() {
   if (!service) {
     return (
       <div className="container section" style={{ textAlign: 'center' }}>
-        <h2>Service not found</h2>
-        <Button to="/services" variant="outline" style={{ marginTop: 'var(--space-4)' }}>Back to Services</Button>
+        <h2>{content.not_found.title}</h2>
+        <Button to="/services" variant="outline" style={{ marginTop: 'var(--space-4)' }}>{content.not_found.btn}</Button>
       </div>
     );
   }
 
   const Icon = service.icon;
   const faqs = [
-    { question: `What technologies do you use for ${service.title}?`, answer: `We primarily use ${service.technologies.join(', ')} for ${service.title.toLowerCase()} projects, selecting the best tools based on your specific requirements.` },
-    { question: 'How long does a typical project take?', answer: 'Project timelines vary based on complexity and scope. During our discovery phase, we provide a detailed timeline and milestone plan tailored to your project.' },
-    { question: 'Do you provide post-launch support?', answer: 'Yes, we offer comprehensive maintenance and support packages to ensure your solution continues to perform optimally after launch.' },
+    { 
+      question: content.faqs_templates[0].q.replace('{title}', service.title), 
+      answer: content.faqs_templates[0].a.replace('{techs}', service.technologies.join(', ')).replace('{title_lower}', service.title.toLowerCase()) 
+    },
+    { 
+      question: content.faqs_templates[1].q, 
+      answer: content.faqs_templates[1].a 
+    },
+    { 
+      question: content.faqs_templates[2].q, 
+      answer: content.faqs_templates[2].a 
+    },
   ];
 
   return (
@@ -37,7 +47,7 @@ export default function ServiceDetail() {
 
       <section className="sd-hero">
         <div className="container">
-          <Link to="/services" className="sd-hero__back"><ArrowLeft size={16} /> All Services</Link>
+          <Link to="/services" className="sd-hero__back"><ArrowLeft size={16} /> {content.hero.back_link}</Link>
           <AnimatedSection>
             <div className="sd-hero__icon"><Icon size={32} /></div>
             <h1 className="sd-hero__title">{service.title}</h1>
@@ -50,7 +60,7 @@ export default function ServiceDetail() {
       <section className="section">
         <div className="container">
           <AnimatedSection>
-            <SectionHeading overline="Benefits" title="Why choose this service" align="left" />
+            <SectionHeading overline={content.sections.benefits.overline} title={content.sections.benefits.title} align="left" />
           </AnimatedSection>
           <AnimatedSection stagger>
             <div className="sd-benefits">
@@ -71,7 +81,7 @@ export default function ServiceDetail() {
       <section className="section section--alt">
         <div className="container">
           <AnimatedSection>
-            <SectionHeading overline="Technologies" title="Tools & frameworks we use" align="left" />
+            <SectionHeading overline={content.sections.technologies.overline} title={content.sections.technologies.title} align="left" />
           </AnimatedSection>
           <AnimatedSection>
             <div className="sd-techs">
@@ -87,7 +97,7 @@ export default function ServiceDetail() {
       <section className="section">
         <div className="container">
           <AnimatedSection>
-            <SectionHeading overline="Process" title="Our development process" align="left" />
+            <SectionHeading overline={content.sections.process.overline} title={content.sections.process.title} align="left" />
           </AnimatedSection>
           <AnimatedSection stagger>
             <div className="sd-process">
@@ -108,7 +118,7 @@ export default function ServiceDetail() {
       <section className="section section--alt">
         <div className="container container--narrow">
           <AnimatedSection>
-            <SectionHeading align="center" overline="FAQ" title="Common questions" />
+            <SectionHeading align="center" overline={content.sections.faq.overline} title={content.sections.faq.title} />
           </AnimatedSection>
           <AnimatedSection>
             <Accordion items={faqs} />
@@ -120,11 +130,11 @@ export default function ServiceDetail() {
       <section className="section">
         <div className="container" style={{ textAlign: 'center' }}>
           <AnimatedSection>
-            <h2>Ready to get started with {service.title}?</h2>
+            <h2>{content.sections.cta.title_start}{service.title}{content.sections.cta.title_end}</h2>
             <p style={{ color: 'var(--color-text-secondary)', marginTop: 'var(--space-4)', marginBottom: 'var(--space-8)' }}>
-              Let's discuss your project and build something amazing together.
+              {content.sections.cta.desc}
             </p>
-            <Button to="/contact" size="lg" iconRight={ArrowRight}>Start Your Project</Button>
+            <Button to="/contact" size="lg" iconRight={ArrowRight}>{content.sections.cta.btn}</Button>
           </AnimatedSection>
         </div>
       </section>

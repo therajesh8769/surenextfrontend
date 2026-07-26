@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "About Surenext — Our Mission, Vision & Team",
+    "description": "Learn about Surenext's mission to deliver reliable next-gen technology. Meet our team, explore our values, and discover our journey."
+  },
+  "hero": {
+    "overline": "About Us",
+    "title_start": "We build technology that",
+    "title_accent": "moves business forward",
+    "desc": "Surenext is a team of engineers, designers, and strategists passionate about delivering technology solutions that create real business impact."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "desc": "To empower businesses with reliable, scalable, and innovative technology solutions that drive growth and create competitive advantage in the digital era."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "desc": "To be the most trusted technology partner for businesses worldwide, known for delivering excellence, innovation, and measurable results."
+  },
+  "values": {
+    "overline": "Our Values",
+    "title": "What we stand for",
+    "desc": "These principles guide every decision we make and every solution we build."
+  },
+  "journey": {
+    "overline": "Our Journey",
+    "title": "Building the future, one year at a time"
+  },
+  "timeline": [
+    { "year": "2019", "title": "Founded", "desc": "Surenext was born with a vision to deliver reliable, next-generation technology solutions." },
+    { "year": "2020", "title": "First Major Client", "desc": "Secured our first enterprise contract and grew the team to 10 engineers." },
+    { "year": "2021", "title": "AI Division Launched", "desc": "Expanded into AI/ML services, delivering intelligent automation solutions." },
+    { "year": "2022", "title": "100 Projects Milestone", "desc": "Celebrated 100+ successful project deliveries across 8 industries." },
+    { "year": "2023", "title": "Global Expansion", "desc": "Opened operations in 3 countries, serving clients across North America, Europe, and Asia." },
+    { "year": "2024", "title": "Innovation Award", "desc": "Recognized as a top emerging technology services company." }
+  ],
+  "leadership": {
+    "overline": "Leadership",
+    "title": "Meet our team",
+    "desc": "Experienced leaders driving innovation and excellence."
+  },
+  "team": [
+    { "name": "Alex Johnson", "role": "CEO & Co-Founder", "initial": "AJ" },
+    { "name": "Priya Sharma", "role": "CTO & Co-Founder", "initial": "PS" },
+    { "name": "David Kim", "role": "VP of Engineering", "initial": "DK" },
+    { "name": "Sarah Mitchell", "role": "Head of Design", "initial": "SM" }
+  ]
+}

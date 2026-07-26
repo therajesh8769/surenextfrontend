@@ -16,7 +16,11 @@ import { STATS, TESTIMONIALS, FAQ_ITEMS, PROCESS_STEPS } from '@/constants/compa
 import { INDUSTRIES } from '@/constants/industries';
 import { TECHNOLOGIES } from '@/constants/industries';
 import { useCounter } from '@/hooks/useAnimations';
+import content from '@/json/home.json';
 import './Home.css';
+
+const WHY_US_ICONS = [Zap, Shield, Users, Clock];
+const WHY_US_FEATURES = content.why_us.features.map((f, i) => ({ ...f, icon: WHY_US_ICONS[i] }));
 
 function StatItem({ value, label }) {
   const numericPart = value.replace(/[^0-9]/g, '');
@@ -36,8 +40,8 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Surenext — Next-Gen Technology Solutions | Custom Software, AI & Cloud</title>
-        <meta name="description" content="Surenext delivers reliable next-generation technology solutions. Custom software development, AI, cloud solutions, and digital transformation for businesses worldwide." />
+        <title>{content.meta.title}</title>
+        <meta name="description" content={content.meta.description} />
       </Helmet>
 
       {/* ===== HERO ===== */}
@@ -50,7 +54,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Software &amp; AI product studio
+              {content.hero.eyebrow}
             </motion.span>
 
             <motion.h1
@@ -59,7 +63,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              We build the software behind <span className="text-accent">next‑stage</span> companies.
+              {content.hero.title_start} <span className="text-accent">{content.hero.title_accent}</span> {content.hero.title_end}
             </motion.h1>
 
             <motion.p
@@ -68,9 +72,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Surenext is a small studio of senior engineers and designers who ship custom
-              software, AI products, and cloud infrastructure — for founders who need it
-              done right the first time.
+              {content.hero.subtitle}
             </motion.p>
 
             <motion.div
@@ -80,10 +82,10 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <Button to="/contact" size="lg" iconRight={ArrowRight}>
-                Start Your Project
+                {content.hero.actions.primary}
               </Button>
               <Button to="/portfolio" variant="outline" size="lg">
-                See Our Work
+                {content.hero.actions.secondary}
               </Button>
             </motion.div>
           </div>
@@ -115,9 +117,9 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <SectionHeading
-              overline="What We Do"
-              title="Services that drive growth"
-              description="From custom software to AI solutions, we deliver end-to-end technology services."
+              overline={content.services.overline}
+              title={content.services.title}
+              description={content.services.description}
             />
           </AnimatedSection>
           <AnimatedSection stagger animation="fadeUp">
@@ -129,7 +131,7 @@ export default function Home() {
                       <CardTitle>{service.title}</CardTitle>
                       <CardDescription>{service.shortDesc}</CardDescription>
                       <span className="service-card__arrow">
-                        Learn more <ArrowUpRight size={14} />
+                        {content.services.link_text} <ArrowUpRight size={14} />
                       </span>
                     </Card>
                   </Link>
@@ -139,7 +141,7 @@ export default function Home() {
           </AnimatedSection>
           <AnimatedSection>
             <div className="section__cta">
-              <Button to="/services" variant="outline" iconRight={ArrowRight}>View All Services</Button>
+              <Button to="/services" variant="outline" iconRight={ArrowRight}>{content.services.cta}</Button>
             </div>
           </AnimatedSection>
         </div>
@@ -150,19 +152,14 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <SectionHeading
-              overline="Why Surenext"
-              title="Why companies choose us"
-              description="We combine technical excellence with a client-first approach to deliver results."
+              overline={content.why_us.overline}
+              title={content.why_us.title}
+              description={content.why_us.description}
             />
           </AnimatedSection>
           <AnimatedSection stagger>
             <div className="grid grid--4">
-              {[
-                { icon: Zap, title: 'Fast Delivery', desc: 'Agile methodology with 2-week sprints. Your project moves forward every day.' },
-                { icon: Shield, title: 'Enterprise Security', desc: 'SOC 2 compliant processes. Your data and IP are always protected.' },
-                { icon: Users, title: 'Dedicated Teams', desc: 'Senior engineers assigned to your project. No juniors, no outsourcing.' },
-                { icon: Clock, title: '24/7 Support', desc: 'Round-the-clock monitoring and support. We\'re always here for you.' },
-              ].map((item) => (
+              {WHY_US_FEATURES.map((item) => (
                 <AnimatedItem key={item.title}>
                   <Card icon={item.icon} variant="bordered">
                     <CardTitle>{item.title}</CardTitle>
@@ -180,9 +177,9 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <SectionHeading
-              overline="Our Process"
-              title="From idea to launch in 4 steps"
-              description="A proven methodology that ensures quality, transparency, and on-time delivery."
+              overline={content.process.overline}
+              title={content.process.title}
+              description={content.process.description}
             />
           </AnimatedSection>
           <AnimatedSection stagger>
@@ -207,9 +204,9 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <SectionHeading
-              overline="Industries"
-              title="Solutions for every industry"
-              description="We understand the unique challenges of each sector and deliver tailored solutions."
+              overline={content.industries.overline}
+              title={content.industries.title}
+              description={content.industries.description}
             />
           </AnimatedSection>
           <AnimatedSection stagger>
@@ -226,7 +223,7 @@ export default function Home() {
           </AnimatedSection>
           <AnimatedSection>
             <div className="section__cta">
-              <Button to="/industries" variant="outline" iconRight={ArrowRight}>View All Industries</Button>
+              <Button to="/industries" variant="outline" iconRight={ArrowRight}>{content.industries.cta}</Button>
             </div>
           </AnimatedSection>
         </div>
@@ -237,9 +234,9 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <SectionHeading
-              overline="Technology Stack"
-              title="Built with the best technologies"
-              description="We use cutting-edge tools and frameworks to build scalable, future-proof solutions."
+              overline={content.tech_stack.overline}
+              title={content.tech_stack.title}
+              description={content.tech_stack.description}
             />
           </AnimatedSection>
           <AnimatedSection>
@@ -264,9 +261,9 @@ export default function Home() {
         <div className="container">
           <AnimatedSection>
             <SectionHeading
-              overline="Testimonials"
-              title="What our clients say"
-              description="Don't just take our word for it — hear from the companies we've helped."
+              overline={content.testimonials.overline}
+              title={content.testimonials.title}
+              description={content.testimonials.description}
             />
           </AnimatedSection>
           <AnimatedSection stagger>
@@ -299,9 +296,9 @@ export default function Home() {
           <AnimatedSection>
             <SectionHeading
               align="center"
-              overline="FAQ"
-              title="Frequently asked questions"
-              description="Everything you need to know about working with us."
+              overline={content.faq.overline}
+              title={content.faq.title}
+              description={content.faq.description}
             />
           </AnimatedSection>
           <AnimatedSection>

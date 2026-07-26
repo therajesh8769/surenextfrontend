@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Surenext — Next-Gen Technology Solutions | Custom Software, AI & Cloud",
+    "description": "Surenext delivers reliable next-generation technology solutions. Custom software development, AI, cloud solutions, and digital transformation for businesses worldwide."
+  },
+  "hero": {
+    "eyebrow": "Software & AI product studio",
+    "title_start": "We build the software behind",
+    "title_accent": "next‑stage",
+    "title_end": "companies.",
+    "subtitle": "Surenext is a small studio of senior engineers and designers who ship custom software, AI products, and cloud infrastructure — for founders who need it done right the first time.",
+    "actions": {
+      "primary": "Start Your Project",
+      "secondary": "See Our Work"
+    }
+  },
+  "services": {
+    "overline": "What We Do",
+    "title": "Services that drive growth",
+    "description": "From custom software to AI solutions, we deliver end-to-end technology services.",
+    "link_text": "Learn more",
+    "cta": "View All Services"
+  },
+  "why_us": {
+    "overline": "Why Surenext",
+    "title": "Why companies choose us",
+    "description": "We combine technical excellence with a client-first approach to deliver results.",
+    "features": [
+      { "title": "Fast Delivery", "desc": "Agile methodology with 2-week sprints. Your project moves forward every day." },
+      { "title": "Enterprise Security", "desc": "SOC 2 compliant processes. Your data and IP are always protected." },
+      { "title": "Dedicated Teams", "desc": "Senior engineers assigned to your project. No juniors, no outsourcing." },
+      { "title": "24/7 Support", "desc": "Round-the-clock monitoring and support. We're always here for you." }
+    ]
+  },
+  "process": {
+    "overline": "Our Process",
+    "title": "From idea to launch in 4 steps",
+    "description": "A proven methodology that ensures quality, transparency, and on-time delivery."
+  },
+  "industries": {
+    "overline": "Industries",
+    "title": "Solutions for every industry",
+    "description": "We understand the unique challenges of each sector and deliver tailored solutions.",
+    "cta": "View All Industries"
+  },
+  "tech_stack": {
+    "overline": "Technology Stack",
+    "title": "Built with the best technologies",
+    "description": "We use cutting-edge tools and frameworks to build scalable, future-proof solutions."
+  },
+  "testimonials": {
+    "overline": "Testimonials",
+    "title": "What our clients say",
+    "description": "Don't just take our word for it — hear from the companies we've helped."
+  },
+  "faq": {
+    "overline": "FAQ",
+    "title": "Frequently asked questions",
+    "description": "Everything you need to know about working with us."
+  }
+}

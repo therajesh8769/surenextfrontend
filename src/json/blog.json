@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Blog — Surenext | Technology Insights"
+  },
+  "hero": {
+    "overline": "Blog",
+    "title_start": "Notes from the",
+    "title_accent": "studio",
+    "desc": "Insights, guides, and best practices from our engineering team."
+  },
+  "posts": [
+    { "slug": "building-scalable-saas", "title": "Building Scalable SaaS Applications in 2024", "excerpt": "Best practices for architecture, multi-tenancy, and performance in modern SaaS development.", "category": "Engineering", "date": "Jan 15, 2024", "pattern": "diagonal" },
+    { "slug": "ai-in-business", "title": "How AI is Transforming Business Operations", "excerpt": "From automation to predictive analytics, discover how AI creates competitive advantage.", "category": "AI", "date": "Feb 8, 2024", "pattern": "dots" },
+    { "slug": "cloud-migration-guide", "title": "The Complete Cloud Migration Guide", "excerpt": "A step-by-step approach to migrating your infrastructure to the cloud safely and efficiently.", "category": "Cloud", "date": "Mar 3, 2024", "pattern": "grid" },
+    { "slug": "react-performance", "title": "React Performance Optimization Techniques", "excerpt": "Advanced strategies for building blazing-fast React applications at scale.", "category": "Frontend", "date": "Apr 12, 2024", "pattern": "arcs" },
+    { "slug": "api-design-best-practices", "title": "API Design Best Practices", "excerpt": "How to design RESTful APIs that are intuitive, scalable, and easy to maintain.", "category": "Backend", "date": "May 20, 2024", "pattern": "dots" },
+    { "slug": "devops-ci-cd", "title": "Setting Up CI/CD Pipelines with GitHub Actions", "excerpt": "Automate your deployment workflow with modern CI/CD pipelines.", "category": "DevOps", "date": "Jun 5, 2024", "pattern": "diagonal" }
+  ],
+  "read_more": "Read more"
+}

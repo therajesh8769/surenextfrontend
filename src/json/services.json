@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Services — Surenext | Custom Software, AI, Cloud & More",
+    "description": "Explore Surenext's comprehensive technology services including custom software development, AI, cloud solutions, and digital transformation."
+  },
+  "hero": {
+    "overline": "Our Services",
+    "title_start": "Technology services that",
+    "title_accent": "deliver results",
+    "desc": "From concept to deployment, we provide end-to-end technology services to help your business thrive in the digital age."
+  },
+  "link_text": "Learn more",
+  "cta": {
+    "title": "Need a custom solution?",
+    "desc": "Can't find exactly what you need? We specialize in building custom solutions tailored to your unique requirements.",
+    "btn": "Let's Talk"
+  }
+}

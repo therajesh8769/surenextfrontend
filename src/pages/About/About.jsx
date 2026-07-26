@@ -4,23 +4,11 @@ import AnimatedSection, { AnimatedItem } from '@/components/ui/AnimatedSection';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Card, { CardTitle, CardDescription } from '@/components/ui/Card';
 import { VALUES, PROCESS_STEPS } from '@/constants/company';
+import content from '@/json/about.json';
 import './About.css';
 
-const TIMELINE = [
-  { year: '2019', title: 'Founded', desc: 'Surenext was born with a vision to deliver reliable, next-generation technology solutions.' },
-  { year: '2020', title: 'First Major Client', desc: 'Secured our first enterprise contract and grew the team to 10 engineers.' },
-  { year: '2021', title: 'AI Division Launched', desc: 'Expanded into AI/ML services, delivering intelligent automation solutions.' },
-  { year: '2022', title: '100 Projects Milestone', desc: 'Celebrated 100+ successful project deliveries across 8 industries.' },
-  { year: '2023', title: 'Global Expansion', desc: 'Opened operations in 3 countries, serving clients across North America, Europe, and Asia.' },
-  { year: '2024', title: 'Innovation Award', desc: 'Recognized as a top emerging technology services company.' },
-];
-
-const TEAM = [
-  { name: 'Alex Johnson', role: 'CEO & Co-Founder', initial: 'AJ' },
-  { name: 'Priya Sharma', role: 'CTO & Co-Founder', initial: 'PS' },
-  { name: 'David Kim', role: 'VP of Engineering', initial: 'DK' },
-  { name: 'Sarah Mitchell', role: 'Head of Design', initial: 'SM' },
-];
+const TIMELINE = content.timeline;
+const TEAM = content.team;
 
 const valueIcons = [Lightbulb, Handshake, Heart, Award];
 
@@ -28,17 +16,17 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Surenext — Our Mission, Vision & Team</title>
-        <meta name="description" content="Learn about Surenext's mission to deliver reliable next-gen technology. Meet our team, explore our values, and discover our journey." />
+        <title>{content.meta.title}</title>
+        <meta name="description" content={content.meta.description} />
       </Helmet>
 
       {/* Hero */}
       <section className="about-hero">
         <div className="container">
           <AnimatedSection>
-            <span className="about-hero__overline">About Us</span>
-            <h1 className="about-hero__title">We build technology that <span className="text-accent">moves business forward</span></h1>
-            <p className="about-hero__desc">Surenext is a team of engineers, designers, and strategists passionate about delivering technology solutions that create real business impact.</p>
+            <span className="about-hero__overline">{content.hero.overline}</span>
+            <h1 className="about-hero__title">{content.hero.title_start} <span className="text-accent">{content.hero.title_accent}</span></h1>
+            <p className="about-hero__desc">{content.hero.desc}</p>
           </AnimatedSection>
         </div>
       </section>
@@ -51,15 +39,15 @@ export default function About() {
               <AnimatedItem>
                 <div className="mv-card">
                   <div className="mv-card__icon"><Target size={28} /></div>
-                  <h3>Our Mission</h3>
-                  <p>To empower businesses with reliable, scalable, and innovative technology solutions that drive growth and create competitive advantage in the digital era.</p>
+                  <h3>{content.mission.title}</h3>
+                  <p>{content.mission.desc}</p>
                 </div>
               </AnimatedItem>
               <AnimatedItem>
                 <div className="mv-card">
                   <div className="mv-card__icon"><Eye size={28} /></div>
-                  <h3>Our Vision</h3>
-                  <p>To be the most trusted technology partner for businesses worldwide, known for delivering excellence, innovation, and measurable results.</p>
+                  <h3>{content.vision.title}</h3>
+                  <p>{content.vision.desc}</p>
                 </div>
               </AnimatedItem>
             </div>
@@ -71,7 +59,7 @@ export default function About() {
       <section className="section section--alt">
         <div className="container">
           <AnimatedSection>
-            <SectionHeading overline="Our Values" title="What we stand for" description="These principles guide every decision we make and every solution we build." />
+            <SectionHeading overline={content.values.overline} title={content.values.title} description={content.values.desc} />
           </AnimatedSection>
           <AnimatedSection stagger>
             <div className="grid grid--4">
@@ -95,7 +83,7 @@ export default function About() {
       <section className="section">
         <div className="container container--narrow">
           <AnimatedSection>
-            <SectionHeading overline="Our Journey" title="Building the future, one year at a time" />
+            <SectionHeading overline={content.journey.overline} title={content.journey.title} />
           </AnimatedSection>
           <div className="timeline">
             {TIMELINE.map((item, i) => (
@@ -118,7 +106,7 @@ export default function About() {
       <section className="section section--alt">
         <div className="container">
           <AnimatedSection>
-            <SectionHeading overline="Leadership" title="Meet our team" description="Experienced leaders driving innovation and excellence." />
+            <SectionHeading overline={content.leadership.overline} title={content.leadership.title} description={content.leadership.desc} />
           </AnimatedSection>
           <AnimatedSection stagger>
             <div className="grid grid--4">

@@ -1,0 +1,47 @@
+{
+  "not_found": {
+    "title": "Service not found",
+    "btn": "Back to Services"
+  },
+  "hero": {
+    "back_link": "All Services"
+  },
+  "sections": {
+    "benefits": {
+      "overline": "Benefits",
+      "title": "Why choose this service"
+    },
+    "technologies": {
+      "overline": "Technologies",
+      "title": "Tools & frameworks we use"
+    },
+    "process": {
+      "overline": "Process",
+      "title": "Our development process"
+    },
+    "faq": {
+      "overline": "FAQ",
+      "title": "Common questions"
+    },
+    "cta": {
+      "title_start": "Ready to get started with ",
+      "title_end": "?",
+      "desc": "Let's discuss your project and build something amazing together.",
+      "btn": "Start Your Project"
+    }
+  },
+  "faqs_templates": [
+    {
+      "q": "What technologies do you use for {title}?",
+      "a": "We primarily use {techs} for {title_lower} projects, selecting the best tools based on your specific requirements."
+    },
+    {
+      "q": "How long does a typical project take?",
+      "a": "Project timelines vary based on complexity and scope. During our discovery phase, we provide a detailed timeline and milestone plan tailored to your project."
+    },
+    {
+      "q": "Do you provide post-launch support?",
+      "a": "Yes, we offer comprehensive maintenance and support packages to ensure your solution continues to perform optimally after launch."
+    }
+  ]
+}

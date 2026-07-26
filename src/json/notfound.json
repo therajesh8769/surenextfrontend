@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "404 — Page Not Found | Surenext"
+  },
+  "content": {
+    "eyebrow": "Error",
+    "code": "404",
+    "title": "Page not found",
+    "desc": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "btn": "Back to Home"
+  }
+}

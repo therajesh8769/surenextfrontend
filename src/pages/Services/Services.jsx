@@ -7,6 +7,7 @@ import SectionHeading from '@/components/ui/SectionHeading';
 import Card, { CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { SERVICES, SERVICE_CATEGORIES } from '@/constants/services';
+import content from '@/json/services.json';
 import './Services.css';
 
 export default function Services() {
@@ -16,16 +17,16 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Services — Surenext | Custom Software, AI, Cloud & More</title>
-        <meta name="description" content="Explore Surenext's comprehensive technology services including custom software development, AI, cloud solutions, and digital transformation." />
+        <title>{content.meta.title}</title>
+        <meta name="description" content={content.meta.description} />
       </Helmet>
 
       <section className="services-hero">
         <div className="container">
           <AnimatedSection>
-            <span className="services-hero__overline">Our Services</span>
-            <h1 className="services-hero__title">Technology services that <span className="text-accent">deliver results</span></h1>
-            <p className="services-hero__desc">From concept to deployment, we provide end-to-end technology services to help your business thrive in the digital age.</p>
+            <span className="services-hero__overline">{content.hero.overline}</span>
+            <h1 className="services-hero__title">{content.hero.title_start} <span className="text-accent">{content.hero.title_accent}</span></h1>
+            <p className="services-hero__desc">{content.hero.desc}</p>
           </AnimatedSection>
         </div>
       </section>
@@ -53,7 +54,7 @@ export default function Services() {
                       <CardTitle>{service.title}</CardTitle>
                       <CardDescription>{service.shortDesc}</CardDescription>
                       <span className="service-card__arrow">
-                        Learn more <ArrowUpRight size={14} />
+                        {content.link_text} <ArrowUpRight size={14} />
                       </span>
                     </Card>
                   </Link>
@@ -67,11 +68,11 @@ export default function Services() {
       <section className="section section--alt">
         <div className="container" style={{ textAlign: 'center' }}>
           <AnimatedSection>
-            <h2>Need a custom solution?</h2>
+            <h2>{content.cta.title}</h2>
             <p style={{ color: 'var(--color-text-secondary)', marginTop: 'var(--space-4)', marginBottom: 'var(--space-8)', maxWidth: 500, marginLeft: 'auto', marginRight: 'auto' }}>
-              Can't find exactly what you need? We specialize in building custom solutions tailored to your unique requirements.
+              {content.cta.desc}
             </p>
-            <Button to="/contact" size="lg">Let's Talk</Button>
+            <Button to="/contact" size="lg">{content.cta.btn}</Button>
           </AnimatedSection>
         </div>
       </section>

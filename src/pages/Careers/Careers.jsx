@@ -5,14 +5,11 @@ import Card, { CardTitle, CardDescription } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { Briefcase, Heart, Zap, GraduationCap, ArrowRight } from 'lucide-react';
 import { OPENINGS, INTERNSHIPS } from '@/constants/careers';
+import content from '@/json/careers.json';
 import './Careers.css';
 
-const PERKS = [
-  { icon: Zap, title: 'Cutting-Edge Projects', desc: 'Work on exciting projects using the latest technologies.' },
-  { icon: GraduationCap, title: 'Learning & Growth', desc: 'Conference budgets, online courses, and mentorship programs.' },
-  { icon: Heart, title: 'Health & Wellness', desc: 'Comprehensive health insurance and wellness programs.' },
-  { icon: Briefcase, title: 'Flexible Work', desc: 'Remote-first culture with flexible working hours.' },
-];
+const PERKS_ICONS = [Zap, GraduationCap, Heart, Briefcase];
+const PERKS = content.perks.map((p, i) => ({ ...p, icon: PERKS_ICONS[i] }));
 
 function OpeningRow({ role }) {
   return (
@@ -22,7 +19,7 @@ function OpeningRow({ role }) {
           <h4 className="careers-opening__title">{role.title}</h4>
           <span className="careers-opening__meta">{role.team} · {role.type} · {role.location}</span>
         </div>
-        <Button to={`/careers/apply?role=${encodeURIComponent(role.title)}`} size="sm" variant="outline">Apply</Button>
+        <Button to={`/careers/apply?role=${encodeURIComponent(role.title)}`} size="sm" variant="outline">{content.apply_btn}</Button>
       </div>
     </AnimatedSection>
   );
@@ -31,15 +28,15 @@ function OpeningRow({ role }) {
 export default function Careers() {
   return (
     <>
-      <Helmet><title>Careers — Surenext | Join Our Team</title></Helmet>
+      <Helmet><title>{content.meta.title}</title></Helmet>
 
       <section className="careers-hero">
         <div className="container">
           <AnimatedSection>
-            <span className="careers-hero__overline">Careers</span>
-            <h1 className="careers-hero__title">Join the <span className="text-accent">Surenext team</span></h1>
-            <p className="careers-hero__desc">Build the future of technology with a team that values innovation, growth, and impact.</p>
-            <Button to="/careers/apply" size="lg" iconRight={ArrowRight}>Apply for a Job or Internship</Button>
+            <span className="careers-hero__overline">{content.hero.overline}</span>
+            <h1 className="careers-hero__title">{content.hero.title_start} <span className="text-accent">{content.hero.title_accent}</span></h1>
+            <p className="careers-hero__desc">{content.hero.desc}</p>
+            <Button to="/careers/apply" size="lg" iconRight={ArrowRight}>{content.hero.apply_btn}</Button>
           </AnimatedSection>
         </div>
       </section>
@@ -64,7 +61,7 @@ export default function Careers() {
       <section className="section section--alt">
         <div className="container container--narrow">
           <AnimatedSection>
-            <SectionHeading align="center" overline="Open Roles" title="Open positions" />
+            <SectionHeading align="center" overline={content.sections.openings.overline} title={content.sections.openings.title} />
           </AnimatedSection>
           <div className="careers-openings">
             {OPENINGS.map((o) => <OpeningRow role={o} key={o.title} />)}
@@ -75,7 +72,7 @@ export default function Careers() {
       <section className="section">
         <div className="container container--narrow">
           <AnimatedSection>
-            <SectionHeading align="center" overline="Internships" title="Internship programs" />
+            <SectionHeading align="center" overline={content.sections.internships.overline} title={content.sections.internships.title} />
           </AnimatedSection>
           <div className="careers-openings">
             {INTERNSHIPS.map((o) => <OpeningRow role={o} key={o.title} />)}

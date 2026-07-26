@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Careers — Surenext | Join Our Team"
+  },
+  "hero": {
+    "overline": "Careers",
+    "title_start": "Join the",
+    "title_accent": "Surenext team",
+    "desc": "Build the future of technology with a team that values innovation, growth, and impact.",
+    "apply_btn": "Apply for a Job or Internship"
+  },
+  "perks": [
+    { "title": "Cutting-Edge Projects", "desc": "Work on exciting projects using the latest technologies." },
+    { "title": "Learning & Growth", "desc": "Conference budgets, online courses, and mentorship programs." },
+    { "title": "Health & Wellness", "desc": "Comprehensive health insurance and wellness programs." },
+    { "title": "Flexible Work", "desc": "Remote-first culture with flexible working hours." }
+  ],
+  "sections": {
+    "openings": {
+      "overline": "Open Roles",
+      "title": "Open positions"
+    },
+    "internships": {
+      "overline": "Internships",
+      "title": "Internship programs"
+    }
+  },
+  "apply_btn": "Apply"
+}

@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Apply — Surenext Careers",
+    "description": "Apply for a job or internship at Surenext."
+  },
+  "hero": {
+    "back_link": "All Openings",
+    "overline": "Apply",
+    "title_start": "Apply for a",
+    "title_accent": "job or internship",
+    "desc": "Tell us about yourself and where you'd like to contribute. We review every application and get back to you within a week."
+  },
+  "alerts": {
+    "success": "Application received! We'll review it and get back to you within a week.",
+    "error": "Something went wrong. Please try again."
+  },
+  "form": {
+    "labels": {
+      "name": "Full Name *",
+      "email": "Email *",
+      "phone": "Phone",
+      "role": "Role you're applying for *",
+      "resumeUrl": "Resume / Portfolio Link *",
+      "message": "Why are you a good fit? *"
+    },
+    "placeholders": {
+      "name": "Jane Doe",
+      "email": "jane@email.com",
+      "phone": "+1 (555) 123-4567",
+      "role_default": "Select a role",
+      "resumeUrl": "Link to your resume (Drive, Dropbox, LinkedIn, portfolio...)",
+      "message": "Tell us about your experience and why you're interested..."
+    },
+    "options": {
+      "optgroup_jobs": "Jobs",
+      "optgroup_internships": "Internships",
+      "general_app": "General Application"
+    },
+    "submit": "Submit Application",
+    "submitting": "Submitting..."
+  },
+  "validation": {
+    "name_min": "Name must be at least 2 characters",
+    "email_invalid": "Please enter a valid email",
+    "role_req": "Please select a role",
+    "resumeUrl_invalid": "Please enter a valid link (Drive, Dropbox, LinkedIn, portfolio, etc.)",
+    "message_min": "Please write at least 20 characters"
+  }
+}

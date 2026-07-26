@@ -1,0 +1,23 @@
+{
+  "last_updated_prefix": "Last updated:",
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "content": "At Surenext, we are committed to protecting your privacy and ensuring the security of your personal information. This policy outlines how we collect, use, and protect your data when you interact with our services."
+    },
+    {
+      "title": "2. Information We Collect",
+      "content": "We collect information you provide directly, such as contact details, project requirements, and communication preferences. We also collect usage data through cookies and analytics tools to improve our services."
+    },
+    {
+      "title": "3. How We Use Your Information",
+      "content": "We use your information to provide and improve our services, communicate with you about projects, send relevant updates, and ensure the security of our platform."
+    },
+    {
+      "title": "4. Contact Us",
+      "content_start": "If you have any questions about this policy, please contact us at ",
+      "email": "hello@surenext.com",
+      "content_end": "."
+    }
+  ]
+}
