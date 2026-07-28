@@ -5,14 +5,15 @@
   },
   "hero": {
     "overline": "Our Services",
-    "title_start": "Technology services that",
-    "title_accent": "deliver results",
-    "desc": "From concept to deployment, we provide end-to-end technology services to help your business thrive in the digital age."
+    "title_start": "Software built for",
+    "title_accent": "real business",
+    "title_end": "challenges.",
+    "desc": "From custom applications and AI solutions to scalable cloud infrastructure, we help businesses design, build, and maintain software that's reliable, practical, and built to grow."
   },
   "link_text": "Learn more",
   "cta": {
-    "title": "Need a custom solution?",
-    "desc": "Can't find exactly what you need? We specialize in building custom solutions tailored to your unique requirements.",
+    "title": "Have a project in mind?",
+    "desc": "Every business is different. If your project doesn't fit neatly into a category, we'll work with you to design the right solution from the ground up.",
     "btn": "Let's Talk"
   }
 }

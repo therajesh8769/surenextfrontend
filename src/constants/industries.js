@@ -4,24 +4,110 @@ import {
 } from 'lucide-react';
 
 export const INDUSTRIES = [
-  { title: 'Startups', icon: Rocket, description: 'MVP development, rapid prototyping, and scalable architecture for fast-growing startups.' },
-  { title: 'Healthcare', icon: HeartPulse, description: 'HIPAA-compliant healthcare solutions, telemedicine platforms, and patient management systems.' },
-  { title: 'Education', icon: GraduationCap, description: 'Learning management systems, EdTech platforms, and virtual classroom solutions.' },
-  { title: 'Ecommerce', icon: ShoppingBag, description: 'Custom online stores, marketplace platforms, and omnichannel retail solutions.' },
-  { title: 'Manufacturing', icon: Factory, description: 'IoT integration, supply chain management, and smart manufacturing solutions.' },
-  { title: 'Logistics', icon: Truck, description: 'Fleet management, route optimization, and real-time tracking solutions.' },
-  { title: 'Enterprise', icon: Building2, description: 'Enterprise resource planning, business intelligence, and digital transformation.' },
-  { title: 'Agencies', icon: Briefcase, description: 'White-label solutions, project management tools, and client portals.' },
-  { title: 'Finance', icon: Landmark, description: 'FinTech solutions, payment processing, and regulatory compliance systems.' },
-  { title: 'Wellness', icon: Stethoscope, description: 'Wellness apps, fitness platforms, and mental health solutions.' },
+  {
+    title: "Startups",
+    icon: Rocket,
+    description:
+      "From MVPs to scalable products, we help startups build quickly, validate ideas, and grow with confidence."
+  },
+
+  {
+    title: "Education",
+    icon: GraduationCap,
+    description:
+      "Learning platforms, student portals, online courses, and educational tools designed for modern learning experiences."
+  },
+
+  {
+    title: "Healthcare",
+    icon: HeartPulse,
+    description:
+      "Digital healthcare platforms, appointment systems, patient portals, and healthcare management solutions."
+  },
+
+  {
+    title: "Ecommerce",
+    icon: ShoppingBag,
+    description:
+      "Modern ecommerce experiences with secure payments, inventory management, customer portals, and analytics."
+  },
+
+  {
+    title: "Manufacturing",
+    icon: Factory,
+    description:
+      "Internal software, inventory systems, production workflows, reporting dashboards, and operational tools."
+  },
+
+  {
+    title: "Logistics",
+    icon: Truck,
+    description:
+      "Fleet management, shipment tracking, logistics dashboards, and operational software that improves visibility."
+  },
+
+  {
+    title: "Finance",
+    icon: Landmark,
+    description:
+      "Financial dashboards, reporting platforms, payment integrations, and secure business applications."
+  },
+
+  {
+    title: "Professional Services",
+    icon: Briefcase,
+    description:
+      "Custom business software, client portals, workflow automation, and internal tools for service-based businesses."
+  }
 ];
 
-export const TECHNOLOGIES = {
-  Frontend: ['React', 'Next.js', 'Vue.js', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS'],
-  Backend: ['Node.js', 'Express', 'Python', 'Django', 'Go', 'NestJS'],
-  Mobile: ['React Native', 'Flutter', 'Swift', 'Kotlin'],
-  Database: ['PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'Elasticsearch'],
-  Cloud: ['AWS', 'Azure', 'Google Cloud', 'Vercel', 'DigitalOcean'],
-  DevOps: ['Docker', 'Kubernetes', 'GitHub Actions', 'Terraform', 'Jenkins'],
-  AI: ['OpenAI', 'TensorFlow', 'PyTorch', 'LangChain', 'Hugging Face'],
-};
+export const TECHNOLOGIES = [
+  {
+    category: "Frontend",
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ]
+  },
+
+  {
+    category: "Backend",
+    items: [
+      "Node.js",
+      "Express",
+      "Python",
+      "NestJS"
+    ]
+  },
+
+  {
+    category: "Database",
+    items: [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis"
+    ]
+  },
+
+  {
+    category: "Cloud",
+    items: [
+      "AWS",
+      "Google Cloud",
+      "Vercel",
+      "Docker"
+    ]
+  },
+
+  {
+    category: "AI",
+    items: [
+      "OpenAI",
+      "LangChain",
+      "Vector Databases",
+      "Python"
+    ]
+  }
+];

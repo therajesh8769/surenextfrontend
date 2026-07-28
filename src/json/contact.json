@@ -1,52 +1,80 @@
 {
   "meta": {
-    "title": "Contact Us — Surenext | Start Your Project",
-    "description": "Get in touch with Surenext. Let's discuss your project requirements and build something amazing together."
+    "title": "Contact | Start Your Next Project | Surenext",
+    "description": "Have a project in mind? We'd love to learn more about your ideas, answer your questions, and explore how we can help build your next product."
   },
   "hero": {
-    "overline": "Contact Us",
-    "title_start": "Let's build something",
-    "title_accent": "great together",
-    "desc": "Tell us about your project and we'll get back to you within 24 hours."
+    "overline": "Contact",
+    "title_start": "Let's talk about",
+    "title_accent": "your next project",
+    "title_end": ".",
+    "desc": "Whether you're building a new product, improving an existing platform, or exploring AI solutions, we'd love to hear what you're working on."
+  },
+  "expect": {
+    "overline": "What Happens Next",
+    "title": "A simple process",
+    "items": [
+      {
+        "title": "Share your idea",
+        "desc": "Tell us about your project, goals, or challenges."
+      },
+      {
+        "title": "We'll review it",
+        "desc": "We'll understand your requirements and reach out if we need more details."
+      },
+      {
+        "title": "Let's discuss",
+        "desc": "If we're a good fit, we'll schedule a conversation to discuss the next steps."
+      }
+    ]
   },
   "form": {
-    "title": "Send us a message",
+    "title": "Tell us about your project",
     "alerts": {
-      "success": "Thank you! We'll get back to you within 24 hours.",
-      "error": "Something went wrong. Please try again."
+      "success": "Thanks for reaching out. We've received your message and will get back to you soon.",
+      "error": "Something went wrong. Please try again or email us directly."
     },
     "labels": {
       "name": "Full Name *",
-      "email": "Email *",
-      "company": "Company",
-      "subject": "Subject *",
-      "message": "Message *"
+      "email": "Email Address *",
+      "company": "Company (Optional)",
+      "subject": "Project Type *",
+      "message": "Project Details *"
     },
     "placeholders": {
       "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Your company",
-      "subject": "Project inquiry",
-      "message": "Tell us about your project..."
+      "email": "john@example.com",
+      "company": "Company or Organization",
+      "subject": "Custom Web Application",
+      "message": "Tell us about your project, goals, timeline, or any challenges you're trying to solve."
     },
     "submit": "Send Message",
     "submitting": "Sending..."
   },
   "validation": {
-    "name_min": "Name must be at least 2 characters",
-    "email_invalid": "Please enter a valid email",
-    "subject_min": "Subject must be at least 5 characters",
-    "message_min": "Message must be at least 20 characters"
+    "name_min": "Please enter at least 2 characters.",
+    "email_invalid": "Please enter a valid email address.",
+    "subject_min": "Please provide a project type.",
+    "message_min": "Please tell us a little more about your project."
   },
   "info": {
     "title": "Get in touch",
-    "desc": "Prefer to reach out directly? Here's how you can contact us.",
+    "desc": "We're a remote-first engineering studio working with clients across different locations. The easiest way to reach us is by email or through the contact form.",
     "labels": {
       "email": "Email",
       "phone": "Phone",
-      "office": "Office"
+      "location": "Location",
+      "hours": "Business Hours"
     },
-    "follow_us": "Follow us",
-    "map": "Google Maps"
+    "values": {
+      "location": "Remote • Serving clients worldwide",
+      "hours": "Monday – Friday • 9:00 AM – 6:00 PM (IST)"
+    },
+    "follow_us": "Connect with us"
+  },
+  "cta": {
+    "title": "Ready to build something meaningful?",
+    "desc": "Let's turn your ideas into reliable software built for the future.",
+    "button": "Start a Conversation"
   }
 }

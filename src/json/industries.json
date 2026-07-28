@@ -1,13 +1,14 @@
 {
   "meta": {
-    "title": "Industries — Surenext | Solutions Across Sectors",
-    "description": "Surenext serves startups, healthcare, education, ecommerce, manufacturing, logistics, and more with tailored technology solutions."
+    "title": "Industries | Software Solutions for Modern Businesses | Surenext",
+    "description": "We build software for startups, growing businesses, and organizations across education, healthcare, ecommerce, logistics, manufacturing, finance, and more."
   },
   "hero": {
     "overline": "Industries",
-    "title_start": "Technology for",
-    "title_accent": "every industry",
-    "desc": "We understand the unique challenges of each sector and deliver tailored solutions that drive real results."
-  },
-  "cta": "Discuss Your Industry"
+    "title_start": "Built for businesses",
+    "title_accent": "across industries",
+    "title_end": ".",
+    "desc": "Every industry has different challenges. We take the time to understand your business, your users, and your goals before building software that fits the way you work.",
+    "cta": "Let's Talk"
+  }
 }

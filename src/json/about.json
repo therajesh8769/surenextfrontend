@@ -1,48 +1,70 @@
 {
   "meta": {
-    "title": "About Surenext — Our Mission, Vision & Team",
-    "description": "Learn about Surenext's mission to deliver reliable next-gen technology. Meet our team, explore our values, and discover our journey."
+    "title": "About Surenext | Building Software with Purpose",
+    "description": "Learn about Surenext, our story, our approach to software development, and the principles that guide everything we build."
   },
   "hero": {
-    "overline": "About Us",
-    "title_start": "We build technology that",
-    "title_accent": "moves business forward",
-    "desc": "Surenext is a team of engineers, designers, and strategists passionate about delivering technology solutions that create real business impact."
+    "overline": "About Surenext",
+    "title_start": "Engineering software with",
+    "title_accent": "clarity",
+    "title_end": "and purpose.",
+    "desc": "Surenext is a software engineering studio focused on building custom software, AI solutions, and digital products that solve real business problems. We believe great software comes from thoughtful engineering, clear communication, and long-term thinking."
+  },
+  "story": {
+    "overline": "Our Story",
+    "title": "Why we started Surenext",
+    "desc": "Surenext was founded with a simple belief: businesses deserve software that's built with care. Instead of chasing trends or adding unnecessary complexity, we focus on creating reliable, maintainable products that help businesses grow with confidence."
   },
   "mission": {
     "title": "Our Mission",
-    "desc": "To empower businesses with reliable, scalable, and innovative technology solutions that drive growth and create competitive advantage in the digital era."
+    "desc": "To build software that businesses can depend on—software that's reliable, scalable, and designed to create lasting value."
   },
   "vision": {
     "title": "Our Vision",
-    "desc": "To be the most trusted technology partner for businesses worldwide, known for delivering excellence, innovation, and measurable results."
+    "desc": "To become a trusted engineering partner known for thoughtful software, honest collaboration, and long-term relationships."
+  },
+  "philosophy": {
+    "overline": "Our Philosophy",
+    "title": "How we approach every project",
+    "desc": "Every decision we make is guided by simplicity, quality, and the belief that technology should solve problems—not create new ones."
   },
   "values": {
-    "overline": "Our Values",
-    "title": "What we stand for",
-    "desc": "These principles guide every decision we make and every solution we build."
+    "overline": "Our Principles",
+    "title": "The way we work",
+    "desc": "These principles shape every project we take on.",
+    "items": [
+      {
+        "title": "Build with Purpose",
+        "description": "Every feature should solve a real problem and create value for the people using it."
+      },
+      {
+        "title": "Keep It Simple",
+        "description": "Simple software is easier to understand, maintain, and improve over time."
+      },
+      {
+        "title": "Communicate Clearly",
+        "description": "Regular updates, honest conversations, and complete transparency throughout every project."
+      },
+      {
+        "title": "Think Long Term",
+        "description": "We build software that's designed to grow with your business—not just launch successfully."
+      }
+    ]
   },
-  "journey": {
-    "overline": "Our Journey",
-    "title": "Building the future, one year at a time"
+  "approach": {
+    "overline": "How We Work",
+    "title": "A collaborative development process",
+    "desc": "We work closely with our clients from discovery to deployment, combining modern technologies with practical engineering to deliver software that's reliable, scalable, and easy to maintain."
   },
-  "timeline": [
-    { "year": "2019", "title": "Founded", "desc": "Surenext was born with a vision to deliver reliable, next-generation technology solutions." },
-    { "year": "2020", "title": "First Major Client", "desc": "Secured our first enterprise contract and grew the team to 10 engineers." },
-    { "year": "2021", "title": "AI Division Launched", "desc": "Expanded into AI/ML services, delivering intelligent automation solutions." },
-    { "year": "2022", "title": "100 Projects Milestone", "desc": "Celebrated 100+ successful project deliveries across 8 industries." },
-    { "year": "2023", "title": "Global Expansion", "desc": "Opened operations in 3 countries, serving clients across North America, Europe, and Asia." },
-    { "year": "2024", "title": "Innovation Award", "desc": "Recognized as a top emerging technology services company." }
-  ],
-  "leadership": {
-    "overline": "Leadership",
-    "title": "Meet our team",
-    "desc": "Experienced leaders driving innovation and excellence."
+  "technology": {
+    "overline": "Technology",
+    "title": "Choosing the right tools matters",
+    "desc": "We believe technology should fit the problem, not the other way around. Every project is built with tools and frameworks that best support long-term performance, scalability, and maintainability."
   },
-  "team": [
-    { "name": "Alex Johnson", "role": "CEO & Co-Founder", "initial": "AJ" },
-    { "name": "Priya Sharma", "role": "CTO & Co-Founder", "initial": "PS" },
-    { "name": "David Kim", "role": "VP of Engineering", "initial": "DK" },
-    { "name": "Sarah Mitchell", "role": "Head of Design", "initial": "SM" }
-  ]
+  "cta": {
+    "title": "Let's build something meaningful.",
+    "desc": "Whether you're starting with an idea or improving an existing product, we'd love to learn about your goals and explore how we can help.",
+    "primary": "Start a Conversation",
+    "secondary": "View Our Work"
+  }
 }

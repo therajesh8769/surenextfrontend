@@ -241,11 +241,11 @@ export default function Home() {
           </AnimatedSection>
           <AnimatedSection>
             <div className="tech-grid scroll-mobile">
-              {Object.entries(TECHNOLOGIES).map(([category, techs]) => (
+              {TECHNOLOGIES.map(({ category, items }) => (
                 <div key={category} className="tech-category">
                   <h4 className="tech-category__title">{category}</h4>
                   <div className="tech-category__tags">
-                    {techs.map((tech) => (
+                    {items.map((tech) => (
                       <span key={tech} className="tech-tag">{tech}</span>
                     ))}
                   </div>

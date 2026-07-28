@@ -1,5 +1,5 @@
 .careers-hero {
-  padding: var(--space-32) 0 var(--space-16);
+  padding: var(--space-12) 0 var(--space-12);
   background: var(--color-bg-alt);
 }
 
@@ -38,6 +38,20 @@
   max-width: 55ch;
 }
 
+.careers-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.careers-hero__actions>* {
+  flex: 1;
+  min-width: 200px;
+  max-width: 260px;
+}
+
 .careers-openings {
   display: flex;
   flex-direction: column;
@@ -72,6 +86,15 @@
 }
 
 @media (max-width: 768px) {
-  .careers-hero { padding: var(--space-24) 0 var(--space-12); }
-  .careers-hero__title { font-size: var(--font-size-3xl); }
+  .careers-hero {
+    padding: var(--space-6) 0 var(--space-12);
+  }
+
+  .careers-hero__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .careers-hero__actions {
+    justify-content: center;
+  }
 }

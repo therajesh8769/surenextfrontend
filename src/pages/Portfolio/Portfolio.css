@@ -1,5 +1,5 @@
 .pf-hero {
-  padding: var(--space-32) 0 var(--space-16);
+  padding: var(--space-12) 0 var(--space-12);
   background: var(--color-bg-alt);
 }
 
@@ -75,6 +75,7 @@
 .pf-card__cover--diagonal {
   background: linear-gradient(115deg, var(--color-primary) 0%, var(--color-primary) 42%, var(--color-bg-alt) 42%, var(--color-bg-alt) 100%);
 }
+
 .pf-card__cover--diagonal::before {
   content: '';
   position: absolute;
@@ -91,6 +92,7 @@
   background-size: 16px 16px;
   background-position: var(--space-4) var(--space-4);
 }
+
 .pf-card__cover--dots::before {
   content: '';
   position: absolute;
@@ -98,6 +100,7 @@
   background: radial-gradient(circle at 75% 30%, transparent 0%, var(--color-bg-alt) 55%);
   opacity: 0.9;
 }
+
 .pf-card__cover--dots::after {
   content: '';
   position: absolute;
@@ -112,6 +115,7 @@
 .pf-card__cover--arcs {
   background: repeating-radial-gradient(circle at 100% 100%, var(--color-primary) 0, var(--color-primary) 14px, var(--color-bg-alt) 14px, var(--color-bg-alt) 28px);
 }
+
 .pf-card__cover--arcs::before {
   content: '';
   position: absolute;
@@ -130,6 +134,7 @@
   background-size: 20px 20px;
   background-color: var(--color-bg-alt);
 }
+
 .pf-card__cover--grid::before {
   content: '';
   position: absolute;
@@ -140,6 +145,7 @@
   border-radius: 2px;
   background: var(--color-primary);
 }
+
 .pf-card__cover--grid::after {
   content: '';
   position: absolute;
@@ -191,12 +197,26 @@
 }
 
 @media (max-width: 1024px) {
-  .pf-grid { grid-template-columns: repeat(2, 1fr); }
+  .pf-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .pf-hero { padding: var(--space-24) 0 var(--space-12); }
-  .pf-hero__title { font-size: var(--font-size-3xl); }
-  .pf-grid { grid-template-columns: 1fr; }
-  .pf-cta { flex-direction: column; align-items: flex-start; }
+  .pf-hero {
+    padding: var(--space-24) 0 var(--space-12);
+  }
+
+  .pf-hero__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .pf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pf-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

@@ -80,7 +80,7 @@ export default function About() {
       </section>
 
       {/* Timeline */}
-      <section className="section">
+      {/* <section className="section">
         <div className="container container--narrow">
           <AnimatedSection>
             <SectionHeading overline={content.journey.overline} title={content.journey.title} />
@@ -100,10 +100,10 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team */}
-      <section className="section section--alt">
+      {/* <section className="section section--alt">
         <div className="container">
           <AnimatedSection>
             <SectionHeading overline={content.leadership.overline} title={content.leadership.title} description={content.leadership.desc} />
@@ -122,7 +122,7 @@ export default function About() {
             </div>
           </AnimatedSection>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

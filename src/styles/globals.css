@@ -150,6 +150,14 @@ select {
 }
 
 /* ---- Utility Classes ---- */
+.text-center {
+  text-align: center;
+}
+
+.mt-32 {
+  margin-top: var(--space-8);
+}
+
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -168,8 +176,8 @@ select {
 }
 
 .section {
-  padding-top: var(--space-24);
-  padding-bottom: var(--space-24);
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
 }
 
 .section--sm {
@@ -267,7 +275,7 @@ select {
 /* ---- Grid Helpers ---- */
 .grid {
   display: grid;
-  gap: var(--space-8);
+  gap: var(--space-4);
 }
 
 /* Ensure all cards in a row have equal height */
@@ -348,31 +356,35 @@ select {
     padding-bottom: var(--space-4);
     /* Improve scroll behavior */
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Hide scrollbar Firefox */
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
   }
 
   .scroll-mobile::-webkit-scrollbar {
-    display: none; /* Hide scrollbar Chrome/Safari */
+    display: none;
+    /* Hide scrollbar Chrome/Safari */
   }
 
-  .scroll-mobile > * {
+  .scroll-mobile>* {
     flex: 0 0 85%;
     scroll-snap-align: start;
-    min-width: 0; /* Prevent flex blowout */
-    height: auto !important; /* Override .grid > * height: 100% */
+    min-width: 0;
+    /* Prevent flex blowout */
+    height: auto !important;
+    /* Override .grid > * height: 100% */
     display: flex;
     flex-direction: column;
   }
 
-  .scroll-mobile > * > * {
+  .scroll-mobile>*>* {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
   .section {
-    padding-top: var(--space-12);
-    padding-bottom: var(--space-12);
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-4);
   }
 }
 

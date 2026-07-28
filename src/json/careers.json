@@ -1,29 +1,58 @@
 {
   "meta": {
-    "title": "Careers — Surenext | Join Our Team"
+    "title": "Careers | Work With Surenext",
+    "description": "We're building Surenext one project at a time. If you're passionate about software engineering, design, or AI, we'd love to hear from you."
   },
   "hero": {
     "overline": "Careers",
-    "title_start": "Join the",
-    "title_accent": "Surenext team",
-    "desc": "Build the future of technology with a team that values innovation, growth, and impact.",
-    "apply_btn": "Apply for a Job or Internship"
+    "title_start": "We're just",
+    "title_accent": "getting started",
+    "title_end": ".",
+    "desc": "Surenext is growing, and while we don't have any open positions today, we're always interested in connecting with talented people who enjoy building thoughtful software.",
+    "primary_btn": "Send Your Resume",
+    "secondary_btn": "Contact Us"
   },
-  "perks": [
-    { "title": "Cutting-Edge Projects", "desc": "Work on exciting projects using the latest technologies." },
-    { "title": "Learning & Growth", "desc": "Conference budgets, online courses, and mentorship programs." },
-    { "title": "Health & Wellness", "desc": "Comprehensive health insurance and wellness programs." },
-    { "title": "Flexible Work", "desc": "Remote-first culture with flexible working hours." }
-  ],
-  "sections": {
-    "openings": {
-      "overline": "Open Roles",
-      "title": "Open positions"
-    },
-    "internships": {
-      "overline": "Internships",
-      "title": "Internship programs"
-    }
+  "message": {
+    "title": "No open positions at the moment",
+    "desc": "We're currently focused on building our company and serving our clients. As we grow, we'll be opening opportunities for software engineers, designers, AI engineers, interns, and other technical roles."
   },
-  "apply_btn": "Apply"
+  "future_roles": {
+    "overline": "Future Opportunities",
+    "title": "Roles we're likely to hire for",
+    "items": [
+      "Full Stack Developers",
+      "Frontend Engineers",
+      "Backend Engineers",
+      "AI Engineers",
+      "UI/UX Designers",
+      "Software Engineering Interns"
+    ]
+  },
+  "culture": {
+    "overline": "How We Work",
+    "title": "What you'll find at Surenext",
+    "items": [
+      {
+        "title": "Meaningful Work",
+        "desc": "Build products that solve real business problems."
+      },
+      {
+        "title": "Continuous Learning",
+        "desc": "We believe great engineers never stop learning."
+      },
+      {
+        "title": "Ownership",
+        "desc": "Everyone is trusted to contribute ideas and take responsibility."
+      },
+      {
+        "title": "Quality First",
+        "desc": "We care about writing software that's reliable, maintainable, and built to last."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Interested in working with us?",
+    "desc": "Even if we're not actively hiring, we'd love to hear from talented people who share our passion for building great software.",
+    "button": "Get in touch"
+  }
 }

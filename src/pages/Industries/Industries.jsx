@@ -33,7 +33,7 @@ export default function Industries() {
           </div>
         </AnimatedSection>
         <AnimatedSection><div style={{ textAlign: 'center', marginTop: 'var(--space-10)' }}>
-          <Button to="/contact" size="lg">{content.cta}</Button>
+          <Button to="/contact" size="lg">{content.hero.cta}</Button>
         </div></AnimatedSection>
       </div></section>
     </>
