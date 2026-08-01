@@ -1,0 +1,230 @@
+/* ===== Back Nav ===== */
+.bp-nav {
+  padding: var(--space-6) 0 var(--space-4);
+}
+
+.bp-nav__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.bp-nav__back:hover {
+  color: var(--color-accent, #6366f1);
+}
+
+/* ===== Cover ===== */
+.bp-cover {
+  padding-bottom: var(--space-10);
+}
+
+.bp-cover__wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 21 / 9;
+}
+
+.bp-cover__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Article Layout ===== */
+.bp-main {
+  padding-bottom: var(--space-16);
+}
+
+.bp-article {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.bp-header {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.bp-header__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.bp-header__category {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent, #6366f1);
+  background: rgba(99, 102, 241, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.bp-header__sep {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-text-tertiary);
+  opacity: 0.5;
+}
+
+.bp-header__detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+}
+
+.bp-header__title {
+  font-family: var(--font-family-display);
+  font-size: clamp(30px, 5vw, 40px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 16px;
+  color: var(--color-text);
+}
+
+.bp-header__lead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ===== Article Body ===== */
+.bp-body h2 {
+  font-family: var(--font-family-display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 40px 0 14px;
+  color: var(--color-text);
+}
+
+.bp-body p {
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin: 0 0 22px;
+}
+
+.bp-body p:first-child {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+/* ===== Related ===== */
+.bp-related {
+  padding: var(--space-12) 0 var(--space-16);
+  border-top: 1px solid var(--color-border);
+}
+
+.bp-related__heading {
+  font-family: var(--font-family-display);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.bp-related__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.bp-related__card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.bp-related__card:hover {
+  border-color: var(--color-accent, #6366f1);
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.bp-related__img-wrap {
+  width: 120px;
+  min-width: 120px;
+  height: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bp-related__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bp-related__cat {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-tertiary);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.bp-related__title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.bp-related__card:hover .bp-related__title {
+  color: var(--color-accent, #6366f1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .bp-nav {
+    padding-top: var(--space-20);
+  }
+
+  .bp-cover__wrap {
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+  }
+
+  .bp-related__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bp-related__card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bp-related__img-wrap {
+    width: 100%;
+    height: 140px;
+  }
+}

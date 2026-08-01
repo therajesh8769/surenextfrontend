@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import AnimatedSection, { AnimatedItem } from '@/components/ui/AnimatedSection';
 import { ArrowRight } from 'lucide-react';
@@ -27,19 +28,31 @@ export default function Blog() {
             <div className="grid grid--3">
               {POSTS.map((post) => (
                 <AnimatedItem key={post.slug}>
-                  <article className="blog-card">
-                    <div className={`blog-card__cover blog-card__cover--${post.pattern}`} />
-                    <div className="blog-card__body">
-                      <div className="blog-card__meta">
-                        <span className="blog-card__category">{post.category}</span>
-                        <span>·</span>
-                        <span>{post.date}</span>
+                  <Link to={`/blog/${post.slug}`} className="blog-card-link">
+                    <article className="blog-card">
+                      <div className="blog-card__cover">
+                        {post.image && (
+                          <img src={post.image} alt={post.title} className="blog-card__img" loading="lazy" />
+                        )}
                       </div>
-                      <h3 className="blog-card__title">{post.title}</h3>
-                      <p className="blog-card__excerpt">{post.excerpt}</p>
-                      <span className="blog-card__link">{content.read_more} <ArrowRight size={14} /></span>
-                    </div>
-                  </article>
+                      <div className="blog-card__body">
+                        <div className="blog-card__meta">
+                          <span className="blog-card__category">{post.category}</span>
+                          <span>·</span>
+                          <span>{post.date}</span>
+                          {post.readTime && (
+                            <>
+                              <span>·</span>
+                              <span>{post.readTime}</span>
+                            </>
+                          )}
+                        </div>
+                        <h3 className="blog-card__title">{post.title}</h3>
+                        <p className="blog-card__excerpt">{post.excerpt}</p>
+                        <span className="blog-card__link">{content.read_more} <ArrowRight size={14} /></span>
+                      </div>
+                    </article>
+                  </Link>
                 </AnimatedItem>
               ))}
             </div>

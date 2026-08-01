@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { ArrowUpRight } from 'lucide-react';
 import AnimatedSection, { AnimatedItem } from '@/components/ui/AnimatedSection';
 import Button from '@/components/ui/Button';
 import content from '@/json/portfolio.json';
@@ -25,16 +26,31 @@ export default function Portfolio() {
         <div className="container">
           <AnimatedSection stagger>
             <div className="pf-grid">
-              {PROJECTS.map((p, i) => (
+              {PROJECTS.map((p) => (
                 <AnimatedItem key={p.title}>
-                  <article className="pf-card">
-                    <div className={`pf-card__cover pf-card__cover--${p.pattern}`}>
-                      <span className="pf-card__index">{String(i + 1).padStart(2, '0')}</span>
-                    </div>
-                    <span className="pf-card__category">{p.category}</span>
-                    <h3 className="pf-card__title">{p.title}</h3>
-                    <p className="pf-card__desc">{p.desc}</p>
-                  </article>
+                  <a
+                    href={p.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pf-card-link"
+                    title={`Visit ${p.title}`}
+                  >
+                    <article className="pf-card">
+                      <div className="pf-card__cover">
+                        {p.image && (
+                          <img src={p.image} alt={p.title} className="pf-card__img" loading="lazy" />
+                        )}
+                      </div>
+                      <div className="pf-card__content">
+                        <div className="pf-card__header">
+                          <span className="pf-card__category">{p.category}</span>
+                          <ArrowUpRight size={18} className="pf-card__arrow" />
+                        </div>
+                        <h3 className="pf-card__title">{p.title}</h3>
+                        <p className="pf-card__desc">{p.desc}</p>
+                      </div>
+                    </article>
+                  </a>
                 </AnimatedItem>
               ))}
             </div>

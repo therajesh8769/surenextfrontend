@@ -23,18 +23,24 @@ export default function ServiceDetail() {
   }
 
   const Icon = service.icon;
+  const technologies = service.technologies || [];
+  const process = service.process || [];
+  const benefits = service.benefits || [];
+
   const faqs = [
     { 
-      question: content.faqs_templates[0].q.replace('{title}', service.title), 
-      answer: content.faqs_templates[0].a.replace('{techs}', service.technologies.join(', ')).replace('{title_lower}', service.title.toLowerCase()) 
+      question: content.faqs_templates[0]?.q?.replace('{title}', service.title) || '', 
+      answer: (content.faqs_templates[0]?.a || '')
+        .replace('{techs}', technologies.length > 0 ? technologies.join(', ') : 'modern industry-standard technologies')
+        .replace('{title_lower}', service.title.toLowerCase()) 
     },
     { 
-      question: content.faqs_templates[1].q, 
-      answer: content.faqs_templates[1].a 
+      question: content.faqs_templates[1]?.q || '', 
+      answer: content.faqs_templates[1]?.a || '' 
     },
     { 
-      question: content.faqs_templates[2].q, 
-      answer: content.faqs_templates[2].a 
+      question: content.faqs_templates[2]?.q || '', 
+      answer: content.faqs_templates[2]?.a || '' 
     },
   ];
 
@@ -49,7 +55,7 @@ export default function ServiceDetail() {
         <div className="container">
           <Link to="/services" className="sd-hero__back"><ArrowLeft size={16} /> {content.hero.back_link}</Link>
           <AnimatedSection>
-            <div className="sd-hero__icon"><Icon size={32} /></div>
+            <div className="sd-hero__icon">{Icon && <Icon size={32} />}</div>
             <h1 className="sd-hero__title">{service.title}</h1>
             <p className="sd-hero__desc">{service.shortDesc}</p>
           </AnimatedSection>
@@ -57,62 +63,68 @@ export default function ServiceDetail() {
       </section>
 
       {/* Benefits */}
-      <section className="section">
-        <div className="container">
-          <AnimatedSection>
-            <SectionHeading overline={content.sections.benefits.overline} title={content.sections.benefits.title} align="left" />
-          </AnimatedSection>
-          <AnimatedSection stagger>
-            <div className="sd-benefits">
-              {service.benefits.map((b) => (
-                <AnimatedItem key={b}>
-                  <div className="sd-benefit">
-                    <CheckCircle2 size={20} className="sd-benefit__icon" />
-                    <span>{b}</span>
-                  </div>
-                </AnimatedItem>
-              ))}
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      {benefits.length > 0 && (
+        <section className="section">
+          <div className="container">
+            <AnimatedSection>
+              <SectionHeading overline={content.sections.benefits.overline} title={content.sections.benefits.title} align="left" />
+            </AnimatedSection>
+            <AnimatedSection stagger>
+              <div className="sd-benefits">
+                {benefits.map((b) => (
+                  <AnimatedItem key={b}>
+                    <div className="sd-benefit">
+                      <CheckCircle2 size={20} className="sd-benefit__icon" />
+                      <span>{b}</span>
+                    </div>
+                  </AnimatedItem>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
 
       {/* Technologies */}
-      <section className="section section--alt">
-        <div className="container">
-          <AnimatedSection>
-            <SectionHeading overline={content.sections.technologies.overline} title={content.sections.technologies.title} align="left" />
-          </AnimatedSection>
-          <AnimatedSection>
-            <div className="sd-techs">
-              {service.technologies.map((t) => (
-                <span key={t} className="tech-tag">{t}</span>
-              ))}
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      {technologies.length > 0 && (
+        <section className="section section--alt">
+          <div className="container">
+            <AnimatedSection>
+              <SectionHeading overline={content.sections.technologies.overline} title={content.sections.technologies.title} align="left" />
+            </AnimatedSection>
+            <AnimatedSection>
+              <div className="sd-techs">
+                {technologies.map((t) => (
+                  <span key={t} className="tech-tag">{t}</span>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
 
       {/* Process */}
-      <section className="section">
-        <div className="container">
-          <AnimatedSection>
-            <SectionHeading overline={content.sections.process.overline} title={content.sections.process.title} align="left" />
-          </AnimatedSection>
-          <AnimatedSection stagger>
-            <div className="sd-process">
-              {service.process.map((step, i) => (
-                <AnimatedItem key={step}>
-                  <div className="sd-process__step">
-                    <span className="sd-process__num">{String(i + 1).padStart(2, '0')}</span>
-                    <span className="sd-process__label">{step}</span>
-                  </div>
-                </AnimatedItem>
-              ))}
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+      {process.length > 0 && (
+        <section className="section">
+          <div className="container">
+            <AnimatedSection>
+              <SectionHeading overline={content.sections.process.overline} title={content.sections.process.title} align="left" />
+            </AnimatedSection>
+            <AnimatedSection stagger>
+              <div className="sd-process">
+                {process.map((step, i) => (
+                  <AnimatedItem key={step}>
+                    <div className="sd-process__step">
+                      <span className="sd-process__num">{String(i + 1).padStart(2, '0')}</span>
+                      <span className="sd-process__label">{step}</span>
+                    </div>
+                  </AnimatedItem>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="section section--alt">

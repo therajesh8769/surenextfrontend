@@ -9,12 +9,54 @@
     "desc": "A selection of projects that showcase our expertise across industries — from early-stage MVPs to enterprise-scale platforms."
   },
   "projects": [
-    { "title": "TechFlow Platform", "category": "SaaS", "desc": "Enterprise SaaS platform serving 10,000+ users with real-time collaboration.", "pattern": "diagonal" },
-    { "title": "MediCare App", "category": "Healthcare", "desc": "HIPAA-compliant telemedicine platform connecting patients with healthcare providers.", "pattern": "dots" },
-    { "title": "ShopNest", "category": "Ecommerce", "desc": "Multi-vendor marketplace processing $2M+ monthly transactions.", "pattern": "arcs" },
-    { "title": "LogiTrack", "category": "Logistics", "desc": "Real-time fleet management and route optimization for 500+ vehicles.", "pattern": "grid" },
-    { "title": "EduLearn LMS", "category": "Education", "desc": "Learning management system used by 50+ institutions worldwide.", "pattern": "dots" },
-    { "title": "FinanceAI", "category": "Finance", "desc": "AI-powered financial analytics dashboard for investment firms.", "pattern": "diagonal" }
+    { 
+      "title": "TechFlow Platform", 
+      "category": "SaaS", 
+      "desc": "Enterprise SaaS platform serving 10,000+ users with real-time collaboration.", 
+      "pattern": "diagonal", 
+      "image": "/images/portfolio/techflow.png",
+      "websiteUrl": "https://techflow-pro.vercel.app/"
+    },
+    { 
+      "title": "MediCare App", 
+      "category": "Healthcare", 
+      "desc": "HIPAA-compliant telemedicine platform connecting patients with healthcare providers.", 
+      "pattern": "dots", 
+      "image": "/images/portfolio/medicare.png",
+      "websiteUrl": "https://danphehealth.com/"
+    },
+    { 
+      "title": "ShopNest", 
+      "category": "Ecommerce", 
+      "desc": "Multi-vendor marketplace processing $2M+ monthly transactions.", 
+      "pattern": "arcs", 
+      "image": "/images/portfolio/shopnest.png",
+      "websiteUrl": "https://bagisto.com/en/"
+    },
+    { 
+      "title": "LogiTrack", 
+      "category": "Logistics", 
+      "desc": "Real-time fleet management and route optimization for 500+ vehicles.", 
+      "pattern": "grid", 
+      "image": "/images/portfolio/logitrack.png",
+      "websiteUrl": "https://www.samsara.com/"
+    },
+    { 
+      "title": "EduLearn LMS", 
+      "category": "Education", 
+      "desc": "Learning management system used by 50+ institutions worldwide.", 
+      "pattern": "dots", 
+      "image": "/images/portfolio/edulearn.png",
+      "websiteUrl": "https://moodle.org/"
+    },
+    { 
+      "title": "FinanceAI", 
+      "category": "Finance", 
+      "desc": "AI-powered financial analytics dashboard for investment firms.", 
+      "pattern": "diagonal", 
+      "image": "/images/portfolio/financeai.png",
+      "websiteUrl": "https://www.koyfin.com/"
+    }
   ],
   "cta": {
     "text": "Have a project in mind? We'd love to hear about it.",

@@ -17,6 +17,14 @@ export const SERVICES = [
       "Scalable architecture",
       "Modern technology stack",
       "Long-term maintainability"
+    ],
+    technologies: ["React", "Node.js", "Python", "PostgreSQL", "Docker"],
+    process: [
+      "Discovery & Planning",
+      "Architecture & Design",
+      "Agile Development",
+      "Testing & Quality Assurance",
+      "Deployment & Maintenance"
     ]
   },
 
@@ -32,6 +40,14 @@ export const SERVICES = [
       "Real-time functionality",
       "Responsive across devices",
       "Built for scale"
+    ],
+    technologies: ["React", "Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
+    process: [
+      "Requirements Gathering",
+      "UI/UX & Wireframing",
+      "Frontend & Backend Engineering",
+      "Performance Optimization",
+      "Launch & Support"
     ]
   },
 
@@ -47,6 +63,14 @@ export const SERVICES = [
       "SEO-friendly",
       "Fast loading",
       "Easy content management"
+    ],
+    technologies: ["React", "Next.js", "HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+    process: [
+      "Brand Strategy & Planning",
+      "Visual Design",
+      "Development & Content",
+      "SEO & Performance Audit",
+      "Deployment"
     ]
   },
 
@@ -62,6 +86,14 @@ export const SERVICES = [
       "Subscriptions",
       "Analytics",
       "Scalable infrastructure"
+    ],
+    technologies: ["React", "Node.js", "PostgreSQL", "Redis", "AWS", "Stripe"],
+    process: [
+      "Product Strategy & MVP Definition",
+      "System Architecture",
+      "Feature Iteration & Development",
+      "Security & Billing Integration",
+      "Release & Scaling"
     ]
   },
 
@@ -77,6 +109,14 @@ export const SERVICES = [
       "AI-powered features",
       "LLM integration",
       "Business intelligence"
+    ],
+    technologies: ["Python", "PyTorch", "TensorFlow", "OpenAI API", "LangChain", "FastAPI"],
+    process: [
+      "Use Case & Feasibility Analysis",
+      "Data Preparation & Pipeline",
+      "Model Selection & Fine-Tuning",
+      "API & Workflow Integration",
+      "Continuous Monitoring & Tuning"
     ]
   },
 
@@ -92,6 +132,14 @@ export const SERVICES = [
       "Customer support",
       "Internal copilots",
       "Natural conversations"
+    ],
+    technologies: ["OpenAI API", "LangChain", "Python", "Pinecone", "Node.js", "React"],
+    process: [
+      "Requirement Analysis",
+      "Knowledge Base Ingestion",
+      "Agent & Prompt Engineering",
+      "User Interface Integration",
+      "Testing & Refinement"
     ]
   },
 
@@ -107,6 +155,14 @@ export const SERVICES = [
       "Scalable hosting",
       "Monitoring",
       "Infrastructure automation"
+    ],
+    technologies: ["AWS", "Google Cloud", "Docker", "Kubernetes", "Terraform", "CI/CD"],
+    process: [
+      "Infrastructure Audit",
+      "Architecture Design",
+      "Migration & Deployment",
+      "Security & Compliance",
+      "Monitoring & Maintenance"
     ]
   },
 
@@ -122,6 +178,14 @@ export const SERVICES = [
       "Wireframes",
       "Design systems",
       "Interactive prototypes"
+    ],
+    technologies: ["Figma", "Design Systems", "Wireframing", "Prototyping", "User Testing"],
+    process: [
+      "User Research & Personas",
+      "Wireframing & Information Architecture",
+      "UI Design & Component Libraries",
+      "Interactive Prototyping",
+      "Developer Handoff"
     ]
   },
 
@@ -137,6 +201,14 @@ export const SERVICES = [
       "Workflow automation",
       "Third-party services",
       "Business process optimization"
+    ],
+    technologies: ["REST APIs", "GraphQL", "Zapier", "Webhooks", "Node.js", "Python"],
+    process: [
+      "Process & API Mapping",
+      "Integration Architecture",
+      "Automation Development",
+      "End-to-End Testing",
+      "Deployment & Monitoring"
     ]
   },
 
@@ -152,6 +224,14 @@ export const SERVICES = [
       "Performance improvements",
       "Security updates",
       "Continuous support"
+    ],
+    technologies: ["Monitoring Tools", "Git", "CI/CD", "Cloudflare", "Docker"],
+    process: [
+      "System Audit & SLA Setup",
+      "Proactive Health Monitoring",
+      "Security Patching & Updates",
+      "Issue Resolution",
+      "Ongoing Optimization"
     ]
   }
 ];
