@@ -9,53 +9,53 @@
     "desc": "A selection of projects that showcase our expertise across industries — from early-stage MVPs to enterprise-scale platforms."
   },
   "projects": [
-    { 
-      "title": "TechFlow Platform", 
-      "category": "SaaS", 
-      "desc": "Enterprise SaaS platform serving 10,000+ users with real-time collaboration.", 
-      "pattern": "diagonal", 
-      "image": "/images/portfolio/techflow.png",
-      "websiteUrl": "https://techflow-pro.vercel.app/"
+    {
+      "title": "AeroStudy",
+      "category": "EdTech",
+      "desc": "MERN platform for Aerospace Engineering students featuring notes management, Google Drive integration, study tracking, and PDF annotation.",
+      "pattern": "grid",
+      "image": "/images/portfolio/aerostudy.png",
+      "websiteUrl": "https://aerostudy.vercel.app/"
     },
-    { 
-      "title": "MediCare App", 
-      "category": "Healthcare", 
-      "desc": "HIPAA-compliant telemedicine platform connecting patients with healthcare providers.", 
-      "pattern": "dots", 
-      "image": "/images/portfolio/medicare.png",
-      "websiteUrl": "https://danphehealth.com/"
+    {
+      "title": "ShopEasy",
+      "category": "E-commerce",
+      "desc": "Full-stack e-commerce platform with secure authentication, product management, shopping cart, Razorpay payment integration, order tracking, and a powerful admin dashboard for inventory and sales management.",
+      "pattern": "dots",
+      "image": "/images/portfolio/shopeasy.png",
+      "websiteUrl": "https://shopeasy-red.vercel.app/"
     },
-    { 
-      "title": "ShopNest", 
-      "category": "Ecommerce", 
-      "desc": "Multi-vendor marketplace processing $2M+ monthly transactions.", 
-      "pattern": "arcs", 
-      "image": "/images/portfolio/shopnest.png",
-      "websiteUrl": "https://bagisto.com/en/"
+    {
+      "title": "MyCA Finance",
+      "category": "FinTech",
+      "desc": "Modern finance management platform that helps users track expenses, visualize spending through interactive reports, calculate loan interest, manage personal loans, send and review loan requests, and complete repayments securely using UPI integration.",
+      "pattern": "lines",
+      "image": "/images/portfolio/myca.png",
+      "websiteUrl": "https://myca-k196.onrender.com/"
     },
-    { 
-      "title": "LogiTrack", 
-      "category": "Logistics", 
-      "desc": "Real-time fleet management and route optimization for 500+ vehicles.", 
-      "pattern": "grid", 
-      "image": "/images/portfolio/logitrack.png",
-      "websiteUrl": "https://www.samsara.com/"
+    {
+      "title": "Abhiyantrix",
+      "category": "Event Management",
+      "desc": "Comprehensive event management platform built for AES, IIEST Shibpur, featuring event scheduling, participant management, real-time updates, and an interactive user experience with modern 3D visuals.",
+      "pattern": "grid",
+      "image": "/images/portfolio/abhiyantrix.png",
+      "websiteUrl": "https://abhiyantrix.info/"
     },
-    { 
-      "title": "EduLearn LMS", 
-      "category": "Education", 
-      "desc": "Learning management system used by 50+ institutions worldwide.", 
-      "pattern": "dots", 
-      "image": "/images/portfolio/edulearn.png",
-      "websiteUrl": "https://moodle.org/"
+    {
+      "title": "AI Documentation Platform",
+      "category": "AI Productivity",
+      "desc": "AI-powered documentation platform that helps teams generate, organize, and manage technical documentation with collaborative editing, version history, smart search, and intelligent writing assistance.",
+      "pattern": "dots",
+      "image": "/images/portfolio/form.png",
+      "websiteUrl": "https://work-flow-documentation.vercel.app/"
     },
-    { 
-      "title": "FinanceAI", 
-      "category": "Finance", 
-      "desc": "AI-powered financial analytics dashboard for investment firms.", 
-      "pattern": "diagonal", 
-      "image": "/images/portfolio/financeai.png",
-      "websiteUrl": "https://www.koyfin.com/"
+    {
+      "title": "AI Form Builder",
+      "category": "Business Automation",
+      "desc": "Modern drag-and-drop form builder with AI-powered form optimization, submission analytics, workflow automation, and real-time insights to improve data collection and user engagement.",
+      "pattern": "grid",
+      "image": "/images/portfolio/workflow.png",
+      "websiteUrl": "https://form-builder-alpha-one.vercel.app/"
     }
   ],
   "cta": {
