@@ -1,3 +1,4 @@
 .animated-section {
   will-change: transform, opacity;
+  padding-top: 24px;
 }

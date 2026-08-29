@@ -162,7 +162,8 @@
 
 @media (max-width: 768px) {
   .about-hero {
-    padding: var(--space-24) 0 var(--space-12);
+    padding: var(--space-6) 0 var(--space-12);
+    margin-bottom: 24px;
   }
 
   .timeline::before {

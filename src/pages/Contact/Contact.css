@@ -195,7 +195,7 @@
 
 @media (max-width: 768px) {
   .contact-hero {
-    padding: var(--space-6) 0 var(--space-12);
+    padding: var(--space-2) 0 var(--space-12);
   }
 
   .contact-hero__title {

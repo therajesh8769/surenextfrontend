@@ -85,7 +85,8 @@
 
 @media (max-width: 768px) {
     .ind-hero {
-        padding: var(--space-12) 0 var(--space-12);
+        padding: var(--space-2) 0 var(--space-12);
+        margin-bottom: 24px;
     }
 
     .ind-hero__title {

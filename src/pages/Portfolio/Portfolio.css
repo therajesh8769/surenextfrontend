@@ -168,7 +168,7 @@
 
 @media (max-width: 768px) {
   .pf-hero {
-    padding: var(--space-24) 0 var(--space-12);
+    padding: var(--space-2) 0 var(--space-12);
   }
 
   .pf-hero__title {
