@@ -67,6 +67,8 @@
       "hours": "Business Hours"
     },
     "values": {
+       "email": "hello.surenext@gmail.com",
+      "phone": "+91-8769162900",
       "location": "Remote • Serving clients worldwide",
       "hours": "Monday – Friday • 9:00 AM – 6:00 PM (IST)"
     },
