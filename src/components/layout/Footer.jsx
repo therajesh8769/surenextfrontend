@@ -108,11 +108,11 @@ export default function Footer() {
             <ul className="footer__col-links">
               <li className="footer__contact-item">
                 <Mail size={14} />
-                <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+                <a href={`mailto:hello.surenext@gmail.com`}>hello.surenext@gmail.com</a>
               </li>
               <li className="footer__contact-item">
                 <Phone size={14} />
-                <a href={`tel:${COMPANY.phone}`}>{COMPANY.phone}</a>
+                <a href={`tel:+918769162900`}>+91-8769162900</a>
               </li>
               <li className="footer__contact-item">
                 <MapPin size={14} />
