@@ -338,8 +338,8 @@ export default function Contact() {
 
                     <div>
                       <h4>{content.info.labels.email}</h4>
-                      <a href={`mailto:${COMPANY.email}`}>
-                        {COMPANY.email}
+                      <a href={`mailto:hello.surenext@gmail.com`}>
+                        hello.surenext@gmail.com
                       </a>
                     </div>
                   </div>
@@ -354,8 +354,8 @@ export default function Contact() {
 
                       <div>
                         <h4>{content.info.labels.phone}</h4>
-                        <a href={`tel:${COMPANY.phone}`}>
-                          {COMPANY.phone}
+                        <a href={`tel:+91-8769162900`}>
+                          +91-8769162900
                         </a>
                       </div>
 
