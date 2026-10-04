@@ -3,14 +3,14 @@ export const COMPANY = {
   tagline: "Custom Software & AI Engineering",
   description:
     "We design and build custom software, AI solutions, and cloud infrastructure that help businesses solve real problems and grow with confidence.",
-  email: "hello@surenext.com",
-  phone: "+91 XXXXX XXXXX",
+  email: "hello.surenext@gmail.com",
+  phone: "+91 87619262900",
   address: "India",
   social: {
-    twitter: "https://twitter.com/surenext",
-    linkedin: "https://linkedin.com/company/surenext",
-    github: "https://github.com/surenext",
-    instagram: "https://instagram.com/surenext",
+    twitter: "https://x.com/hy_raj_26",
+    linkedin: "https://linkedin.com/in/hyraj26",
+    github: "https://github.com/therajesh8769",
+    instagram: "",
   },
 };
 
